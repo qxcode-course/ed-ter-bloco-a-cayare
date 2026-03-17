@@ -13,12 +13,11 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@revisão
 - ed@main-quest
+- ed@revisão
 tasks:
-  ed@pintando: '{self:1, rate:100, study:30, friend:Matheus meu amigo, problem:1,
-    code:1, debug:1, refactor:1}'
-  ed@mumia: '{self:1, rate:100, study:30, problem:1, code:1, debug:1}'
+  ed@pintando: '{self:1, rate:100, study:30, friend:Matheus meu amigo, concept:1}'
+  ed@mumia: '{self:1, rate:100, study:30, concept:1, debug:1}'
 flags:
   painel: 0
   quests: 0
@@ -27,4 +26,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@pintando
+selected: ed@mumia
