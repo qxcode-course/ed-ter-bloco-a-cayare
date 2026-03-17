@@ -13,3 +13,16 @@
 2026-03-17 08:22:06, MOVE, v:1, k:ed@mumia, mode:PICK
 2026-03-17 08:22:18, SELF, v:1, k:ed@mumia, self:1, rate:100, study:30, concept:1, debug:1
 2026-03-17 08:22:19, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-17 08:43:24, MOVE, v:1, k:ed@fuga, mode:DOWN
+2026-03-17 08:43:33, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-03-17 09:08:46, EXEC, v:1, k:ed@fuga, mode:FULL, size:54, fail:COMP
+2026-03-17 09:11:22, EXEC, v:1, k:ed@fuga, mode:FULL, size:54, fail:COMP
+2026-03-17 09:11:23, EXEC, v:1, k:ed@fuga, mode:FULL, fail:COMP
+2026-03-17 09:14:46, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0, size:54
+2026-03-17 09:16:05, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0, size:54
+2026-03-17 09:16:10, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0
+2026-03-17 09:18:52, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-03-17 09:21:05, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0, size:55
+2026-03-17 09:22:23, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:39
+2026-03-17 09:23:38, SELF, v:1, k:ed@fuga, self:1, rate:100, study:40, problem:1, code:1, debug:1
+2026-03-17 09:23:42, MOVE, v:1, k:ed@fuga, mode:BACK
