@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_14-58-20",
+            "content": "@@ -62,16 +62,31 @@\n al int%0A%0A\n+%09var casal int%0A\n %09fmt.Sca\n@@ -201,16 +201,25 @@\n t.Scan(&\n+casal)%0A%09%09\n animal%5Bi\n@@ -223,21 +223,34 @@\n l%5Bi%5D\n-)%0A\n+ = casal\n %0A%09%7D%0A%09\n+var \n cont \n-:\n+int \n = 0%0A\n@@ -295,47 +295,8 @@\n  %7B%0A%0A\n-%09%09if animal%5Bi%5D == 0 %7B%0A%09%09%09continue%0A%09%09%7D%0A%0A\n %09%09fo\n@@ -379,16 +379,24 @@\n %09cont++%0A\n+%09%09%09%09i++%0A\n %09%09%09%09anim\n@@ -403,17 +403,19 @@\n al%5Bj%5D = \n-0\n+222\n %0A%09%09%09%7D%0A%09%09\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_15-05-59",
+            "content": "@@ -403,36 +403,8 @@\n = 0%0A\n-%09%09%09%09animal%5Bi%5D = 0%0A%09%09%09%09break%0A\n %09%09%09%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-17_15-10-06",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar quantidadeAnimal int\n\n\tfmt.Scan(&quantidadeAnimal)\n\tanimal := make([]int, quantidadeAnimal)\n\n\tfor i := 0; i < quantidadeAnimal; i++ {\n\t\tfmt.Scan(&animal[i])\n\n\t}\n\tcont := 0\n\tfor i := 0; i < quantidadeAnimal; i++ {\n\n\t\tif animal[i] == 0 {\n\t\t\tcontinue\n\t\t}\n\n\t\tfor j := 0; j < quantidadeAnimal; j++ {\n\n\t\t\tif animal[i] == animal[j]*-1 {\n\t\t\t\tcont++\n\t\t\t\tanimal[j] = 0\n\t\t\t\tanimal[i] = 0\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t}\n\tfmt.Println(cont)\n}\n",
+            "lines": "33"
+        }
+    ]
+}
