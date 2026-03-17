@@ -26,3 +26,33 @@
 2026-03-17 09:22:23, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:39
 2026-03-17 09:23:38, SELF, v:1, k:ed@fuga, self:1, rate:100, study:40, problem:1, code:1, debug:1
 2026-03-17 09:23:42, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-03-17 10:12:58, MOVE, v:1, k:ed@pedra, mode:DOWN
+2026-03-17 10:13:05, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-17 10:23:22, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-03-17 10:23:26, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-17 10:23:28, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100
+2026-03-17 10:23:53, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-17 10:23:56, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-03-17 11:31:31, EXEC, v:1, k:ed@mumia, mode:FULL, rate:100
+2026-03-17 11:32:11, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-17 11:32:15, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-17 11:32:22, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:5
+2026-03-17 11:32:16, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0
+2026-03-17 11:33:08, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-17 11:33:43, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0
+2026-03-17 11:33:44, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0
+2026-03-17 11:33:56, EXEC, v:1, k:ed@pedra, mode:FULL, rate:75, size:43
+2026-03-17 11:38:06, EXEC, v:1, k:ed@pedra, mode:FULL, size:43, fail:COMP
+2026-03-17 11:38:28, EXEC, v:1, k:ed@pedra, mode:FULL, size:43, fail:COMP
+2026-03-17 11:38:29, EXEC, v:1, k:ed@pedra, mode:FULL, fail:COMP
+2026-03-17 11:38:30, EXEC, v:1, k:ed@pedra, mode:FULL, fail:COMP
+2026-03-17 11:39:21, EXEC, v:1, k:ed@pedra, mode:FULL, rate:75, size:43
+2026-03-17 11:39:32, EXEC, v:1, k:ed@pedra, mode:FULL, rate:100, size:43
+2026-03-17 11:41:08, SELF, v:1, k:ed@pedra, self:1, rate:100, study:50, friend:Andre Luiz, concept:1
+2026-03-17 11:41:10, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-03-17 11:40:48, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-17 11:41:25, SELF, v:1, k:ed@pedra, self:1, rate:100, study:50, friend:Andre Luiz, concept:1, code:1
+2026-03-17 11:41:26, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-03-17 11:41:30, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-17 11:41:26, SELF, v:1, k:ed@pedra, self:1, rate:100, study:50, friend:Andre Luiz, concept:1
+2026-03-17 11:41:28, MOVE, v:1, k:ed@pedra, mode:BACK

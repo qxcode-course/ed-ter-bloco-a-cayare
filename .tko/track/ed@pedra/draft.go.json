@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_11-32-22",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,516 +41,28 @@\n     \n-var n int %0A    fmt.Scan(&n)%0A%0A    var ganhador_indice int = -1%0A    var menor_diferenca int = 999%0A%0A    for i := 0; i %3C n; i++%7B%0A        var a, b int %0A        fmt.Scan(&a, &b)%0A%0A        if a %3E= 10 && b %3E= 10 %7B%0A            dif := a - b%0A           %0A            if dif %3C 0 %7B%0A                dif = - dif%0A            %7D%0A%0A            if dif %3C menor_diferenca %7B%0A                menor_diferenca = dif%0A                ganhador_indice = i%0A            %7D%0A%0A        %7D%0A%0A    %7D   %0A%0A%0A%0A    %0A%0A    fmt.Println(ganhador_indice)%0A%0A%0A%0A%0A    \n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n-%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_11-33-56",
+            "content": "@@ -343,25 +343,24 @@\n            %7D\n- \n %0A%0A          \n@@ -486,17 +486,16 @@\n        %7D\n- \n %0A%0A    %7D \n@@ -501,32 +501,17 @@\n    %0A\n-if ganhador =! -1%7B\n+%0A%0A\n %0A    %0A\n+%0A\n     \n@@ -543,51 +543,8 @@\n ce)%0A\n-%7D else %7B%0A    fmt.Println(%22Sem ganhador%22)%0A%7D%0A\n %0A%0A%0A%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-17_11-38-06",
+            "content": "@@ -515,10 +515,10 @@\n dor \n-!\n =\n+!\n  -1%7B\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-17_11-38-28",
+            "content": "@@ -510,23 +510,16 @@\n ganhador\n-_indice\n  != -1%7B%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-17_11-39-21",
+            "content": "@@ -589,17 +589,17 @@\n rintln(%22\n-s\n+S\n em ganha\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-17_11-39-32",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var n int \n    fmt.Scan(&n)\n\n    var ganhador_indice int = -1\n    var menor_diferenca int = 999\n\n    for i := 0; i < n; i++{\n        var a, b int \n        fmt.Scan(&a, &b)\n\n        if a >= 10 && b >= 10 {\n            dif := a - b\n           \n            if dif < 0 {\n                dif = - dif\n            } \n\n            if dif < menor_diferenca {\n                menor_diferenca = dif\n                ganhador_indice = i\n            }\n\n        } \n\n    }   \nif ganhador_indice != -1{\n    \n    fmt.Println(ganhador_indice)\n} else {\n    fmt.Println(\"sem ganhador\")\n}\n\n\n\n\n    \n}\n\n",
+            "lines": "43"
+        }
+    ]
+}
