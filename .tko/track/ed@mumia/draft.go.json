@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_22-39-35",
+            "content": "@@ -178,32 +178,36 @@\n  crianca%22)%0A    %7D\n+%0A   \n  else if idade %3E\n@@ -226,16 +226,16 @@\n  %3C 18 %7B%0A\n-\n %0A       \n@@ -282,32 +282,36 @@\n eh jovem%22)%0A    %7D\n+%0A   \n  else if idade %3E\n@@ -392,24 +392,29 @@\n lto%22)%0A    %7D \n+%0A    \n else if idad\n@@ -495,21 +495,25 @@\n idoso%22)%0A\n-\n     %7D\n+%0A   \n  else %7B%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-03-16_22-40-39",
+            "content": "@@ -160,24 +160,26 @@\n    fmt.Print\n+ln\n (%22eh crianca\n@@ -177,24 +177,24 @@\n h crianca%22)%0A\n-\n     %7D else i\n@@ -262,24 +262,26 @@\n    fmt.Print\n+ln\n (%22eh jovem%22)\n@@ -362,24 +362,26 @@\n    fmt.Print\n+ln\n (%22eh adulto%22\n@@ -463,24 +463,26 @@\n    fmt.Print\n+ln\n (%22eh idoso%22)\n@@ -514,32 +514,32 @@\n t.Println(nome)%0A\n-\n         fmt.Prin\n@@ -539,16 +539,18 @@\n mt.Print\n+ln\n (%22eh mum\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-16_22-41-31",
+            "content": "@@ -160,26 +160,24 @@\n    fmt.Print\n-ln\n (%22eh crianca\n@@ -260,26 +260,24 @@\n    fmt.Print\n-ln\n (%22eh jovem%22)\n@@ -358,26 +358,24 @@\n    fmt.Print\n-ln\n (%22eh adulto%22\n@@ -457,26 +457,24 @@\n    fmt.Print\n-ln\n (%22eh idoso%22)\n@@ -513,16 +513,24 @@\n ln(nome)\n+%0A       \n  fmt.Pri\n@@ -531,18 +531,16 @@\n mt.Print\n-ln\n (%22eh mum\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-16_22-42-01",
+            "content": "@@ -1,559 +1,98 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var nome string %0A    var idade int%0A%0A    fmt.Scan(&nome,&idade)%0A%0A    if idade %3C 12%7B%0A%0A        fmt.Println(nome)%0A        fmt.Println(%22eh crianca%22)%0A    %7D else if idade %3E 11 && idade %3C 18 %7B%0A%0A        fmt.Println(nome)%0A        fmt.Println(%22eh jovem%22)%0A    %7D else if idade %3E 18 && idade %3C 65 %7B%0A%0A        fmt.Println(nome)%0A        fmt.Println(%22eh adulto%22)%0A    %7D else if idade %3E 65 && idade %3C 1000%7B%0A        fmt.Println(nome)%0A        fmt.Println(%22eh idoso%22)%0A    %7D else %7B%0A         fmt.Println(nome %22eh mumia%22) %0A         %0A    %7D%0A%7D\n+@@ -524,31 +524,33 @@%0A nome%0A- %2522eh mumia%2522) %250A         %0A+) fmt.Println(%2522eh mumia%2522)%0A %250A   \n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_22-42-30",
+            "content": "@@ -520,16 +520,27 @@\n tln(nome\n+ %22eh mumia%22\n ) %0A     \n@@ -547,31 +547,8 @@\n     \n-fmt.Println(%22eh mumia%22)\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-16_22-42-47",
+            "content": "@@ -448,18 +448,37 @@\n tln(nome\n-, \n+)%0A        fmt.Println\n (%22eh ido\n@@ -481,26 +481,16 @@\n  idoso%22)\n-)%0A        \n %0A    %7D e\n@@ -524,20 +524,8 @@\n nome\n-, %22eh mumia%22\n ) %0A \n@@ -532,16 +532,39 @@\n         \n+fmt.Println(%22eh mumia%22)\n %0A    %7D%0A%7D\n@@ -564,9 +564,8 @@\n     %7D%0A%7D%0A\n-%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-16_22-44-37",
+            "content": "@@ -141,26 +141,46 @@\n Println(nome\n-, \n+)%0A        fmt.Println(\n %22eh crianca%22\n@@ -181,25 +181,16 @@\n ianca%22)%0A\n-        %0A\n     %7D el\n@@ -243,26 +243,46 @@\n Println(nome\n-, \n+)%0A        fmt.Println(\n %22eh jovem%22)%0A\n@@ -281,24 +281,16 @@\n jovem%22)%0A\n-       %0A\n     %7D el\n@@ -343,26 +343,46 @@\n Println(nome\n-, \n+)%0A        fmt.Println(\n %22eh adulto%22)\n@@ -382,25 +382,16 @@\n dulto%22)%0A\n-        %0A\n     %7D el\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-16_22-45-16",
+            "content": "@@ -285,9 +285,9 @@\n  %3E 1\n-7\n+8\n  && \n@@ -375,9 +375,9 @@\n  %3E 6\n-4\n+5\n  && \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-16_22-47-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string \n    var idade int\n\n    fmt.Scan(&nome,&idade)\n\n    if idade < 12{\n\n        fmt.Println(nome, \"eh crianca\")\n        \n    } else if idade > 11 && idade < 18 {\n\n        fmt.Println(nome, \"eh jovem\")\n       \n    } else if idade > 17 && idade < 65 {\n\n        fmt.Println(nome, \"eh adulto\")\n        \n    } else if idade > 64 && idade < 1000{\n        fmt.Println(nome, (\"eh idoso\"))\n        \n    } else {\n         fmt.Println(nome, \"eh mumia\") \n         \n    }\n}\n\n",
+            "lines": "29"
+        }
+    ]
+}

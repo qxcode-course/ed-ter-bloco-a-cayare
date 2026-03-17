@@ -18,6 +18,7 @@ expanded:
 tasks:
   ed@pintando: '{self:1, rate:100, study:30, friend:Matheus meu amigo, problem:1,
     code:1, debug:1, refactor:1}'
+  ed@mumia: '{self:1, rate:100, study:30, problem:1, code:1, debug:1}'
 flags:
   painel: 0
   quests: 0
