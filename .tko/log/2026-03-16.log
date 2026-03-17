@@ -1,0 +1,26 @@
+2026-03-16 21:33:58, MOVE, v:1, k:ed@pintando, mode:DOWN
+2026-03-16 21:34:13, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 21:34:36, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-16 21:34:40, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 21:37:15, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-16 21:37:28, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 21:40:38, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-16 21:41:21, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 21:45:37, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-16 21:46:17, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 22:10:17, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-16 22:11:30, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 22:11:53, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100, size:18
+2026-03-16 22:14:51, SELF, v:1, k:ed@pintando, self:1, rate:100, study:30, friend:Matheus meu amigo, problem:1, code:1, debug:1, refactor:1
+2026-03-16 22:14:53, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100
+2026-03-16 22:14:57, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-16 22:15:47, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 22:15:52, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100
+2026-03-16 22:16:19, EXEC, v:1, k:ed@pintando, mode:FREE
+2026-03-16 22:17:01, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-16 22:17:05, MOVE, v:1, k:ed@mumia, mode:DOWN
+2026-03-16 22:17:08, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-03-16 22:17:24, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-16 22:17:27, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-16 22:17:37, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100
+2026-03-16 22:19:39, MOVE, v:1, k:ed@pintando, mode:BACK
