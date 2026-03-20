@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-20_12-39-23",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,913 +23,53 @@\n mt%22%0A\n-%0A\n func \n-repetidos(vetor %5B%5Dint) %7B%0A%09achou := false%0A%09for i := 0; i %3C len(vetor); i++ %7B%0A%09%09repetiu := false%0A%0A%09%09for j := i + 1; j %3C len(vetor); j++ %7B%0A%0A%09%09%09if vetor%5Bi%5D == vetor%5Bj%5D %7B%0A%09%09%09%09repetiu = true%0A%0A%09%09%09%7D%0A%0A%09%09%09if repetiu %7B%0A%09%09%09%09fmt.Println(vetor%5Bi%5D)%0A%09%09%09%09achou = true%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%7D%0A%0A%09if !achou %7B%0A%09%09fmt.Println(%22N%22)%0A%09%7D%0A%7D%0A%0Afunc falta(x int, vetor %5B%5Dint) %7B%0A%0A%09faltam := make(%5B%5Dint, x)%0A%09n := 1%0A%09for i := 0; i %3C x; i++ %7B%0A%0A%09%09faltam%5Bi%5D = n%0A%09%09n++%0A%09%7D%0A%09achou := false%0A%0A%09for j := 0; j %3C len(faltam); j++ %7B%0A%0A%09%09existe := false%0A%0A%09%09for i := 0; i %3C len(vetor); i++ %7B%0A%0A%09%09%09if faltam%5Bj%5D == vetor%5Bi%5D %7B%0A%09%09%09%09existe = true%0A%09%09%09%09break%0A%0A%09%09%09%7D%0A%09%09%09if !existe %7B%0A%09%09%09%09fmt.Println(faltam%5Bj%5D)%0A%09%09%09%09achou = true%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09if !achou %7B%0A%09%09fmt.Println(%22N%22)%0A%09%7D%0A%0A%7D%0A%0Afunc main() %7B%0A%09var figN int%0A%09var figB int%0A%0A%09fmt.Scan(&figN, &figB)%0A%0A%09vetor := make(%5B%5Dint, figB)%0A%0A%09for i := 0; i %3C figB; i++ %7B%0A%0A%09%09fmt.Scan(&vetor%5Bi%5D)%0A%0A%09%7D%0A%0A%09repetidos(vetor)%0A%09falta(figN, vetor\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-20_13-40-11",
+            "content": "@@ -219,19 +219,16 @@\n %0A%09%09%09%7D%0A%0A%09\n-%09%7D%0A\n %09%09if rep\n@@ -237,16 +237,17 @@\n iu %7B%0A%09%09%09\n+%09\n fmt.Prin\n@@ -263,16 +263,17 @@\n %5Bi%5D)%0A%09%09%09\n+%09\n achou = \n@@ -277,20 +277,26 @@\n  = true%0A\n+%09\n %09%09%7D%0A\n+%09%09%7D%0A%0A\n %09%7D%0A%0A%09if \n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-03-20_13-42-42",
+            "content": "@@ -614,29 +614,25 @@\n break%0A%0A%09%09%09%7D%0A\n-%0A%09%09%7D%0A\n+%09\n %09%09if !existe\n@@ -634,16 +634,17 @@\n xiste %7B%0A\n+%09\n %09%09%09fmt.P\n@@ -661,16 +661,17 @@\n tam%5Bj%5D)%0A\n+%09\n %09%09%09achou\n@@ -670,32 +670,37 @@\n %09%09%09achou = true%0A\n+%09%09%09%7D%0A\n %09%09%7D%0A%09%7D%0A%0A%09if !ach\n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-03-20_13-43-47",
+            "content": "@@ -650,16 +650,18 @@\n mt.Print\n+ln\n (faltam%5B\n@@ -666,13 +666,8 @@\n m%5Bj%5D\n-, %22 %22\n )%0A%09%09\n@@ -726,37 +726,8 @@\n )%0A%09%7D\n- else %7B%0A%09%09fmt.Println(%22 %22)%0A%09%7D\n %0A%0A%7D%0A\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-03-20_13-46-18",
+            "content": "@@ -51,17 +51,16 @@\n %5Dint) %7B%0A\n-%0A\n %09achou :\n@@ -63,25 +63,24 @@\n ou := false%0A\n-%0A\n %09for i := 0;\n@@ -97,24 +97,43 @@\n etor); i++ %7B\n+%0A%09%09repetiu := false\n %0A%0A%09%09for j :=\n@@ -192,18 +192,61 @@\n or%5Bj%5D %7B%0A\n-%0A\n %09\n+%09%09%09repetiu = true%0A%0A%09%09%09%7D%0A%0A%09%09%7D%0A%09%09if repetiu %7B%0A\n %09%09%09fmt.P\n@@ -249,16 +249,18 @@\n mt.Print\n+ln\n (vetor%5Bi\n@@ -260,24 +260,18 @@\n vetor%5Bi%5D\n-, %22 %22\n )%0A\n-%09\n %09%09%09achou\n@@ -282,17 +282,12 @@\n rue%0A\n-%09\n %09%09%7D%0A\n-%09%09%7D%0A\n %09%7D%0A%0A\n@@ -322,34 +322,8 @@\n N%22)%0A\n-%09%7D else %7B%0A%09%09fmt.Println()%0A\n %09%7D%0A%7D\n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-03-20_13-48-27",
+            "content": "@@ -109,21 +109,8 @@\n  %7B%0A%0A\n-%09%09cont := 0%0A%0A\n %09%09fo\n@@ -179,59 +179,10 @@\n %5D %7B%0A\n-%09%09%09%09cont++%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09for k := 0; k %3C cont; k++ %7B\n %0A\n+%09\n %09%09%09f\n@@ -200,32 +200,33 @@\n tor%5Bi%5D, %22 %22)%0A%09%09%09\n+%09\n achou = true%0A%09%09%7D\n@@ -214,32 +214,37 @@\n %09%09%09achou = true%0A\n+%09%09%09%7D%0A\n %09%09%7D%0A%09%7D%0A%0A%09if !ach\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-03-20_13-50-48",
+            "content": "@@ -213,26 +213,8 @@\n %09%7D%0A%0A\n-%09%09if cont %3E 0 %7B%0A%0A%09\n %09%09fo\n@@ -243,52 +243,8 @@\n + %7B%0A\n-%0A%09%09%09%09if achou %7B%0A%09%09%09%09%09fmt.Print(%22 %22)%0A%09%09%09%09%7D%0A%0A%09\n %09%09%09f\n@@ -260,19 +260,23 @@\n vetor%5Bi%5D\n+, %22 %22\n )%0A\n-%09\n %09%09%09achou\n@@ -287,27 +287,8 @@\n rue%0A\n-%09%09%09%7D%0A%0A%09%09%09i += cont%0A\n %09%09%7D%0A\n@@ -381,32 +381,118 @@\n vetor %5B%5Dint) %7B%0A%0A\n+%09faltam := make(%5B%5Dint, x)%0A%09n := 1%0A%09for i := 0; i %3C x; i++ %7B%0A%0A%09%09faltam%5Bi%5D = n%0A%09%09n++%0A%09%7D%0A\n %09achou := false%0A\n@@ -501,31 +501,34 @@\n for \n-num\n+j\n  := \n-1; num %3C= x; num\n+0; j %3C len(faltam); j\n ++ %7B\n@@ -591,19 +591,25 @@\n %0A%0A%09%09%09if \n-num\n+faltam%5Bj%5D\n  == veto\n@@ -643,26 +643,27 @@\n %09%09break%0A\n+%0A\n %09%09%09%7D%0A\n+%0A\n %09%09%7D%0A\n-%0A\n %09%09if !ex\n@@ -673,64 +673,35 @@\n e %7B%0A\n-%0A%09%09%09if achou %7B%0A%09%09%09%09fmt.Print(%22 %22)%0A%09%09%09%7D%0A%0A%09%09%09fmt.Print(num\n+%09%09%09fmt.Print(faltam%5Bj%5D, %22 %22\n )%0A%09%09\n@@ -774,24 +774,27 @@\n fmt.Println(\n+%22 %22\n )%0A%09%7D%0A%0A%7D%0A%0Afun\n@@ -804,17 +804,16 @@\n ain() %7B%0A\n-%0A\n %09var fig\n@@ -916,16 +916,17 @@\n ; i++ %7B%0A\n+%0A\n %09%09fmt.Sc\n@@ -939,16 +939,17 @@\n tor%5Bi%5D)%0A\n+%0A\n %09%7D%0A%0A%09rep\n@@ -982,11 +982,10 @@\n  vetor)%0A\n-%0A\n %7D%0A\n",
+            "lines": "87"
+        },
+        {
+            "label": "2026-03-20_13-56-09",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc repetidos(vetor []int) {\n\n\tachou := false\n\n\tfor i := 0; i < len(vetor); i++ {\n\n\t\tcont := 0\n\n\t\tfor j := i + 1; j < len(vetor); j++ {\n\n\t\t\tif vetor[i] == vetor[j] {\n\t\t\t\tcont++\n\t\t\t}\n\t\t}\n\n\t\tif cont > 0 {\n\n\t\t\tfor k := 0; k < cont; k++ {\n\n\t\t\t\tif achou {\n\t\t\t\t\tfmt.Print(\" \")\n\t\t\t\t}\n\n\t\t\t\tfmt.Print(vetor[i])\n\t\t\t\tachou = true\n\t\t\t}\n\n\t\t\ti += cont\n\t\t}\n\t}\n\n\tif !achou {\n\t\tfmt.Println(\"N\")\n\t} else {\n\t\tfmt.Println()\n\t}\n}\n\nfunc falta(x int, vetor []int) {\n\n\tachou := false\n\n\tfor num := 1; num <= x; num++ {\n\n\t\texiste := false\n\n\t\tfor i := 0; i < len(vetor); i++ {\n\n\t\t\tif num == vetor[i] {\n\t\t\t\texiste = true\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\tif !existe {\n\n\t\t\tif achou {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\n\t\t\tfmt.Print(num)\n\t\t\tachou = true\n\t\t}\n\t}\n\n\tif !achou {\n\t\tfmt.Println(\"N\")\n\t} else {\n\t\tfmt.Println()\n\t}\n\n}\n\nfunc main() {\n\n\tvar figN int\n\tvar figB int\n\n\tfmt.Scan(&figN, &figB)\n\n\tvetor := make([]int, figB)\n\n\tfor i := 0; i < figB; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\n\trepetidos(vetor)\n\tfalta(figN, vetor)\n\n}\n",
+            "lines": "94"
+        }
+    ]
+}
