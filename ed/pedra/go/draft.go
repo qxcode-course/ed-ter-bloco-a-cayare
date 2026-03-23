@@ -2,42 +2,40 @@ package main
 
 import "fmt"
 
+type jogada struct {
+	pa, pb int
+}
+
+func abs(j jogada) int {
+	if j.pa > j.pb {
+		return j.pa - j.pb
+	}
+	return j.pb - j.pa
+}
+
 func main() {
-    var n int 
-    fmt.Scan(&n)
+	qtd := 0
+	fmt.Scan(&qtd)
+	jogadas := make([]jogada, qtd)
+	for i := range jogadas {
+		fmt.Scan(&jogadas[i].pa, &jogadas[i].pb)
 
-    var ganhador_indice int = -1
-    var menor_diferenca int = 999
+	}
+	indMelhor := -1
 
-    for i := 0; i < n; i++{
-        var a, b int 
-        fmt.Scan(&a, &b)
-
-        if a >= 10 && b >= 10 {
-            dif := a - b
-           
-            if dif < 0 {
-                dif = - dif
-            } 
-
-            if dif < menor_diferenca {
-                menor_diferenca = dif
-                ganhador_indice = i
-            }
-
-        } 
-
-    }   
-if ganhador_indice != -1{
-    
-    fmt.Println(ganhador_indice)
-} else {
-    fmt.Println("sem ganhador")
+	for i, jog := range jogadas {
+		if jog.pa < 10 || jog.pb < 10 {
+			continue
+		}
+		if indMelhor == -1 {
+			indMelhor = i
+		} else if abs(jog) < abs(jogadas[indMelhor]) {
+			indMelhor = i
+		}
+	}
+	if indMelhor == -1 {
+		fmt.Println("sem ganhador")
+	} else {
+		fmt.Println(indMelhor)
+	}
 }
-
-
-
-
-    
-}
-
