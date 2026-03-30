@@ -1,0 +1,169 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_10-58-24",
+            "content": "@@ -269,37 +269,28 @@\n     \n-%0A%0A        fmt.Print(vetor%5Bi%5D)\n+if vetor%5Bi%5D == ind %7B\n %0A   \n@@ -286,34 +286,35 @@\n = ind %7B%0A        \n-if\n+   \n  vetor%5Bi%5D == ind\n@@ -312,19 +312,36 @@\n i%5D =\n-= ind%7B%0A    \n+ vetor%5Bi%5D + %22%3E%22 %0A        %7D%0A%0A\n     \n@@ -358,22 +358,17 @@\n int(\n-%22%3E%22)%0A        %7D\n+vetor%5Bi%5D)\n %0A%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-24_11-01-10",
+            "content": "@@ -103,10 +103,8 @@\n     \n-//\n sobr\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-24_11-01-35",
+            "content": "@@ -299,12 +299,8 @@\n r%5Bi%5D\n- %22 %22\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-24_11-02-05",
+            "content": "@@ -299,29 +299,11 @@\n r%5Bi%5D\n-)%0A        fmt.Print(%22\n+ %22 \n %22)%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-24_11-03-01",
+            "content": "@@ -316,17 +316,16 @@\n .Print(%22\n- \n %22)%0A     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-24_11-03-09",
+            "content": "@@ -305,16 +305,30 @@\n         \n+fmt.Print(%22 %22)\n %0A       \n@@ -385,38 +385,16 @@\n       %7D%0A\n-        fmt.Print(%22 %22)\n %0A    %7D%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-24_11-03-34",
+            "content": "@@ -255,51 +255,25 @@\n  qtd\n-*2\n ; i++%7B%0A\n-  \n+%0A\n       \n-for i := 0; i %3C qtd; i+2%7B \n+  %0A\n %0A   \n@@ -397,27 +397,8 @@\n %22 %22)\n-%0A%0A             %7D   \n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-24_11-08-38",
+            "content": "@@ -291,17 +291,17 @@\n  qtd; i+\n-+\n+2\n %7B %0A     \n@@ -423,20 +423,8 @@\n %22 %22)\n-%0A        i++\n %0A%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-24_11-08-57",
+            "content": "@@ -433,43 +433,10 @@\n    i\n-f i %3E 0 %7B%0A            i++%0A        %7D\n+++\n %0A%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-11-26",
+            "content": "@@ -435,17 +435,17 @@\n  if i %3E \n-1\n+0\n  %7B%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-24_11-11-46",
+            "content": "@@ -456,10 +456,10 @@\n    i\n---\n+++\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-24_11-12-09",
+            "content": "@@ -435,17 +435,17 @@\n  if i %3E \n-2\n+1\n  %7B%0A     \n@@ -452,18 +452,18 @@\n        i\n-++\n+--\n %0A       \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-24_11-12-30",
+            "content": "@@ -260,16 +260,50 @@\n 2; i++%7B%0A\n+        for i := 0; i %3C qtd; i++%7B \n %0A       \n@@ -428,16 +428,52 @@\n         \n+if i %3E 2 %7B%0A            i++%0A        %7D\n %0A%0A      \n@@ -475,21 +475,25 @@\n             \n+%7D   \n %0A    %7D%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-24_11-17-07",
+            "content": "@@ -247,24 +247,26 @@\n = 0; i %3C qtd\n+*2\n ; i++%7B%0A%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-17-19",
+            "content": "@@ -262,24 +262,9 @@\n ++%7B%0A\n-        j:= ind\n %0A\n+\n     \n@@ -313,17 +313,17 @@\n f vetor%5B\n-j\n+i\n %5D == ind\n@@ -397,25 +397,8 @@\n    %0A\n-        j = j + 2\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-18-56",
+            "content": "@@ -271,16 +271,18 @@\n    j:= i\n+nd\n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-20-02",
+            "content": "@@ -255,10 +255,8 @@\n  qtd\n-*2\n ; i+\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-20-25",
+            "content": "@@ -232,27 +232,8 @@\n   %7D%0A\n-    tam := qtd * 2%0A\n     \n@@ -252,11 +252,13 @@\n i %3C \n-tam\n+qtd*2\n ; i+\n@@ -438,50 +438,13 @@\n     \n-if (j == qtd)%7B%0A            j = 1%0A        %7D\n+     \n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-21-41",
+            "content": "@@ -259,35 +259,35 @@\n for i := 0; i %3C \n-qtd\n+tam\n ; i++%7B%0A        j\n@@ -463,19 +463,8 @@\n j ==\n- qtd %7C%7C j %3E\n  qtd\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-24_11-22-16",
+            "content": "@@ -228,24 +228,38 @@\n 1%0A    %7D%0A    \n+tam := qtd * 2\n %0A    for i :\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-24_11-22-34",
+            "content": "@@ -257,9 +257,11 @@\n i %3C \n-6\n+qtd\n ; i+\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-24_11-23-10",
+            "content": "@@ -299,17 +299,17 @@\n t(vetor%5B\n-j\n+i\n %5D)%0A     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-24_11-24-04",
+            "content": "@@ -245,35 +245,33 @@\n for i := 0; i %3C \n-qtd\n+6\n ; i++%7B%0A        j\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-24_11-24-22",
+            "content": "@@ -415,21 +415,92 @@\n    %0A        \n+j = j + 2%0A        if (j == qtd %7C%7C j %3E qtd)%7B%0A            j = 1%0A        %7D\n %0A    %7D%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-25_15-27-47",
+            "content": "@@ -275,17 +275,17 @@\n     j:= \n-0\n+i\n %0A       \n@@ -314,17 +314,16 @@\n        %0A\n-%0A\n         \n@@ -407,32 +407,32 @@\n %22)%0A        %0A\n+\n         \n if vetor%5Bi +\n@@ -423,124 +423,8 @@\n     \n-if vetor%5Bi + 1%5D %3E= qtd%7B%0A            i = 0%0A        %7D%0A        j++%0A        if j == qtd * 3%7B%0A            break%0A        %7D\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-25_15-29-35",
+            "content": "@@ -430,19 +430,23 @@\n  vetor%5Bi\n+ + 1\n %5D \n-=\n+%3E\n = qtd%7B%0A \n@@ -472,32 +472,35 @@\n       %7D%0A        \n+j++\n %0A        if j ==\n@@ -527,16 +527,16 @@\n   break%0A\n+\n         \n@@ -533,32 +533,20 @@\n k%0A        %7D%0A\n-        j++%0A\n     %7D%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-03-25_15-30-16",
+            "content": "@@ -236,15 +236,8 @@\n     \n-  j:= 0\n %0A   \n@@ -265,24 +265,31 @@\n  i++%7B%0A      \n+  j:= 0\n %0A        fmt\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-25_15-46-42",
+            "content": "@@ -306,14 +306,8 @@\n or%5Bj\n- %25 qtd\n %5D)%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-25_15-48-29",
+            "content": "@@ -37,11 +37,527 @@\n ) %7B%0A    \n+qtd := 0%0A    fmt.Scan(&qtd)%0A    vetor := make(%5B%5Dint, qtd)%0A    //sobreviventes := make(%5B%5Dint, qtd)%0A    ind := 0%0A    fmt.Scan(&ind)%0A    for i := 0; i %3C qtd; i++%7B%0A        vetor%5Bi%5D = i + 1%0A    %7D%0A      j:= 0%0A    for i := 0; i %3C qtd; i++%7B%0A      %0A        fmt.Print(vetor%5Bj %25 qtd%5D)%0A        %0A%0A        if vetor%5Bj%5D == ind%7B%0A            fmt.Print(%22%3E%22)%0A        %7D%0A        fmt.Print(%22 %22)%0A        %0A        if vetor%5Bi%5D == qtd%7B%0A            i = 0%0A        %7D%0A        %0A        if j == qtd * 3%7B%0A            break%0A        %7D%0A        j++%0A    %7D\n %0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-30_15-21-33",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,640 +23,25 @@\n mt%22%0A\n-%0A\n func \n-imprimir_fila(fila %5B%5Dint, posEspada int) %7B%0A%09fmt.Print(%22%5B %22)%0A%0A%09for i, valor := range fila %7B%0A%0A%09%09if i == posEspada %7B%0A%09%09%09fmt.Printf(%22%25d%3E %22, valor)%0A%09%09%7D else %7B%0A%09%09%09fmt.Printf(%22%25d %22, valor)%0A%09%09%7D%0A%09%7D%0A%09fmt.Print(%22 %5D%22)%0A%7D%0Afunc main() %7B%0A%0A%09var n int%0A%09var e int%0A%09fmt.Scan(&n, &e)%0A%0A%09fila := make(%5B%5Dint, n)%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fila%5Bi%5D = i + 1%0A%09%7D%0A%09espada := 0%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09if fila%5Bi%5D == e %7B%0A%09%09%09espada = i%0A%09%09%09break%0A%09%09%7D%0A%0A%09%7D%0A%09for len(fila) %3E 1 %7B%0A%09%09imprimir_fila(fila, espada)%0A%0A%09%09vitima := (espada + 1) %25 len(fila)%0A%09%09fila = append(fila%5B:vitima%5D, fila%5Bvitima+1:%5D...)%0A%0A%09%09espada = vitima %25 len(fila)%0A%09%7D%0A%09imprimir_fila(fila, espada)\n+main() %7B%0A    \n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_16-25-11",
+            "content": "@@ -227,16 +227,17 @@\n .Print(%22\n+ \n %5D%22)%0A%7D%0Afu\n@@ -626,24 +626,8 @@\n la)%0A\n-%09%09fmt.Println()%0A\n %09%7D%0A%09\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-30_16-26-59",
+            "content": "@@ -669,25 +669,10 @@\n espada)%0A\n-%09fmt.Println()%0A\n %7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-30_16-27-46",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc imprimir_fila(fila []int, posEspada int) {\n\tfmt.Print(\"[ \")\n\n\tfor i, valor := range fila {\n\n\t\tif i == posEspada {\n\t\t\tfmt.Printf(\"%d> \", valor)\n\t\t} else {\n\t\t\tfmt.Printf(\"%d \", valor)\n\t\t}\n\t}\n\tfmt.Print(\"]\")\n}\nfunc main() {\n\n\tvar n int\n\tvar e int\n\tfmt.Scan(&n, &e)\n\n\tfila := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfila[i] = i + 1\n\t}\n\tespada := 0\n\tfor i := 0; i < n; i++ {\n\t\tif fila[i] == e {\n\t\t\tespada = i\n\t\t\tbreak\n\t\t}\n\n\t}\n\tfor len(fila) > 1 {\n\t\timprimir_fila(fila, espada)\n\n\t\tvitima := (espada + 1) % len(fila)\n\t\tfila = append(fila[:vitima], fila[vitima+1:]...)\n\n\t\tespada = vitima % len(fila)\n\t\tfmt.Println()\n\t}\n\timprimir_fila(fila, espada)\n\tfmt.Println()\n}\n",
+            "lines": "47"
+        }
+    ]
+}
