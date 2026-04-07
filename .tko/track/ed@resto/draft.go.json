@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_23-17-07",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,81 +1,152 @@%0A-\n package \n@@ -29,24 +29,36 @@\n main\n-%0A%0A\n+%250A%250A\n import \n-%22fmt%22%0A%0A\n+%2522fmt%2522%250A%250A\n func\n@@ -74,19 +74,25 @@\n (n int) \n-%7B%0A%09\n+%257B%250A%2509\n if n == \n@@ -97,118 +97,560 @@\n = 0 \n-%7B%0A%09%09return%0A%09%7D%0A%09proximo := n / 2%0A%09resto := n %25 2%0A%09fmt.Printf(%22%25d %25d %5Cn%22, proximo, resto)%0A%09imprimir(proximo)%0A%7D%0A%0A\n+%257B%250A%2509%2509return%250A%2509%257D%250A%2509%0A+@@ -35,17 +35,19 @@%250A mprimir(%250A-n%250A+vet%250A  int) %25257B%25250A%250A@@ -50,17 +50,19 @@%250A ) %25257B%25250A%252509if %250A-n%250A+vet%250A  == 0 %25257B%25250A%250A@@ -77,100 +77,8 @@%250A %25250A%252509%25257D%25250A%250A-%252509%0A prox%0A@@ -157,18 +157,22 @@%0A := n / 2%0A-%250A%2509%0A+%25250A%252509%0A resto :=%0A@@ -179,12 +179,18 @@%0A  n %2525%0A- 2%250A%2509%0A+25 2%25250A%252509%0A fmt.%0A@@ -200,18 +200,28 @@%0A ntf(%0A-%2522%2525d %2525d %255Cn%2522%0A+%252522%252525d %252525d %25255Cn%252522%0A , pr%0A@@ -233,18 +233,22 @@%0A , resto)%0A-%250A%2509%0A+%25250A%252509%0A imprimir%0A@@ -261,67 +261,18 @@%0A mo)%250A%0A-%257D%250A%250A\n func\n@@ -661,11 +661,17 @@\n n() \n-%7B%0A%09\n+%257B%250A%2509\n var \n@@ -676,19 +676,25 @@\n r n1 int\n-%0A%0A%09\n+%250A%250A%2509\n fmt.Scan\n@@ -702,11 +702,17 @@\n &n1)\n-%0A%0A%09\n+%250A%250A%2509\n impr\n@@ -723,8 +723,42 @@\n (n1)\n-%0A%0A%7D\n+%250A%250A%257D%0A+ %25250A%25257D%25250A%25250A%0A %250A\n %0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-06_23-21-34",
+            "content": "@@ -107,27 +107,8 @@\n %25 2%0A\n-%09imprimir(proximo)%0A\n %09fmt\n@@ -143,16 +143,34 @@\n  resto)%0A\n+%09imprimir(proximo)\n %0A%7D%0A%0Afunc\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_23-22-42",
+            "content": "@@ -143,17 +143,16 @@\n %25d %25d %5Cn\n- \n %22, proxi\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-06_23-23-14",
+            "content": "@@ -144,10 +144,12 @@\n d %25d\n+ \n %5Cn\n+ \n %22, p\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-06_23-23-33",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc imprimir(n int) {\n\tif n == 0 {\n\t\treturn\n\t}\n\tproximo := n / 2\n\tresto := n % 2\n\timprimir(proximo)\n\tfmt.Printf(\"%d %d\\n\", proximo, resto)\n\n}\n\nfunc main() {\n\tvar n1 int\n\n\tfmt.Scan(&n1)\n\n\timprimir(n1)\n\n}\n",
+            "lines": "23"
+        }
+    ]
+}

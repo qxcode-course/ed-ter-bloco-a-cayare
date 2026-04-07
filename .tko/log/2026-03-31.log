@@ -1,0 +1,4 @@
+2026-03-31 10:05:39, MOVE, v:1, k:ed@manipulacao, mode:PICK
+2026-03-31 10:07:54, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:0, size:106
+2026-03-31 10:16:00, MOVE, v:1, k:ed@manipulacao, mode:BACK
+2026-03-31 10:16:04, MOVE, v:1, k:ed@princesa, mode:PICK

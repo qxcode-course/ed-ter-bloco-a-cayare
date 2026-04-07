@@ -1,0 +1,33 @@
+2026-04-01 10:15:03, MOVE, v:1, k:ed@fractais_png, mode:DOWN
+2026-04-01 10:15:12, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-04-01 10:20:44, MOVE, v:1, k:ed@fractais_png, mode:BACK
+2026-04-01 10:21:54, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-04-01 10:22:41, EXEC, v:1, k:ed@fractais_png, mode:FULL, size:136, fail:COMP
+2026-04-01 10:22:42, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:55, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:23:26, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:23:27, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:56, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:56, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:56, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:56, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:56, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:57, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:57, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:57, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:58, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:58, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:58, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:58, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:58, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:58, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:59, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:22:59, EXEC, v:1, k:ed@fractais_png, mode:FULL, fail:COMP
+2026-04-01 10:37:34, MOVE, v:1, k:ed@fractais_png, mode:BACK
+2026-04-01 10:41:24, MOVE, v:1, k:ed@triangulo, mode:DOWN
+2026-04-01 10:41:33, MOVE, v:1, k:ed@triangulo, mode:PICK
+2026-04-01 11:14:22, MOVE, v:1, k:ed@queimada, mode:DOWN
+2026-04-01 11:14:25, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-01 11:17:11, EXEC, v:1, k:ed@queimada, mode:FULL, size:38, fail:COMP
+2026-04-01 11:17:12, EXEC, v:1, k:ed@queimada, mode:FULL, fail:COMP
+2026-04-01 11:17:13, EXEC, v:1, k:ed@queimada, mode:FULL, fail:COMP
