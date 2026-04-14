@@ -15,8 +15,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@vector
-- ed@rec
+- ed@map_set
 flags:
   inbox: inbox
   panel: help
@@ -24,4 +23,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@labirinto
+selected: ed@basic

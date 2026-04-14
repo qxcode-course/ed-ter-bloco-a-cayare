@@ -12,6 +12,16 @@
         },
         {
             "label": "2026-03-17_15-10-06",
+            "content": "@@ -41,19 +41,25 @@\n %7B%0A%09var q\n-ntd\n+uantidade\n Animal i\n@@ -61,16 +61,17 @@\n mal int%0A\n+%0A\n %09fmt.Sca\n@@ -78,19 +78,390 @@\n n(&q\n-ntdAnimal)%0A%09\n+uantidadeAnimal)%0A%09animal := make(%5B%5Dint, quantidadeAnimal)%0A%0A%09for i := 0; i %3C quantidadeAnimal; i++ %7B%0A%09%09fmt.Scan(&animal%5Bi%5D)%0A%0A%09%7D%0A%09cont := 0%0A%09for i := 0; i %3C quantidadeAnimal; i++ %7B%0A%0A%09%09if animal%5Bi%5D == 0 %7B%0A%09%09%09continue%0A%09%09%7D%0A%0A%09%09for j := 0; j %3C quantidadeAnimal; j++ %7B%0A%0A%09%09%09if animal%5Bi%5D == animal%5Bj%5D*-1 %7B%0A%09%09%09%09cont++%0A%09%09%09%09animal%5Bj%5D = 0%0A%09%09%09%09animal%5Bi%5D = 0%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(cont)\n %0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-14_12-06-14",
+            "content": "@@ -41,25 +41,19 @@\n %7B%0A%09var q\n-uantidade\n+ntd\n Animal i\n@@ -55,17 +55,16 @@\n mal int%0A\n-%0A\n %09fmt.Sca\n@@ -71,390 +71,19 @@\n n(&q\n-uantidadeAnimal)%0A%09animal := make(%5B%5Dint, quantidadeAnimal)%0A%0A%09for i := 0; i %3C quantidadeAnimal; i++ %7B%0A%09%09fmt.Scan(&animal%5Bi%5D)%0A%0A%09%7D%0A%09cont := 0%0A%09for i := 0; i %3C quantidadeAnimal; i++ %7B%0A%0A%09%09if animal%5Bi%5D == 0 %7B%0A%09%09%09continue%0A%09%09%7D%0A%0A%09%09for j := 0; j %3C quantidadeAnimal; j++ %7B%0A%0A%09%09%09if animal%5Bi%5D == animal%5Bj%5D*-1 %7B%0A%09%09%09%09cont++%0A%09%09%09%09animal%5Bj%5D = 0%0A%09%09%09%09animal%5Bi%5D = 0%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(cont)\n+ntdAnimal)%0A%09\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_12-06-34",
             "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar quantidadeAnimal int\n\n\tfmt.Scan(&quantidadeAnimal)\n\tanimal := make([]int, quantidadeAnimal)\n\n\tfor i := 0; i < quantidadeAnimal; i++ {\n\t\tfmt.Scan(&animal[i])\n\n\t}\n\tcont := 0\n\tfor i := 0; i < quantidadeAnimal; i++ {\n\n\t\tif animal[i] == 0 {\n\t\t\tcontinue\n\t\t}\n\n\t\tfor j := 0; j < quantidadeAnimal; j++ {\n\n\t\t\tif animal[i] == animal[j]*-1 {\n\t\t\t\tcont++\n\t\t\t\tanimal[j] = 0\n\t\t\t\tanimal[i] = 0\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t}\n\tfmt.Println(cont)\n}\n",
             "lines": "33"
         }

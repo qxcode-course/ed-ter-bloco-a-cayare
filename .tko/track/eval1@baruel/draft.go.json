@@ -1,0 +1,144 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_13-23-25",
+            "content": "@@ -180,10 +180,8 @@\n )%0A%09%09\n-//\n fmt.\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_13-24-10",
+            "content": "@@ -65,18 +65,16 @@\n gB int%0A%09\n-//\n fig := m\n@@ -90,16 +90,16 @@\n , figB)%0A\n+\n %09fmt.Sca\n@@ -126,18 +126,16 @@\n &figB)%0A%09\n-//\n for i :=\n@@ -155,18 +155,16 @@\n  i++ %7B%0A%09\n-//\n %09fmt.Sca\n@@ -201,16 +201,14 @@\n %5D, %22 %22)%0A\n+\n %09\n-//\n %7D%0A%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_13-25-17",
+            "content": "@@ -65,16 +65,18 @@\n gB int%0A%09\n+//\n fig := m\n@@ -131,25 +131,8 @@\n gB)%0A\n-    fmt.Print()%0A%0A\n %09//f\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_13-26-51",
+            "content": "@@ -133,11 +133,24 @@\n     \n+fmt.Print()\n %0A%0A%09\n+//\n for \n@@ -174,16 +174,18 @@\n  i++ %7B%0A%09\n+//\n %09fmt.Sca\n@@ -197,15 +197,41 @@\n g%5Bi%5D)%0A%09%09\n-%0A%09\n+//fmt.Print(fig%5Bi%5D, %22 %22)%0A%09//\n %7D%0A%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_13-27-23",
+            "content": "@@ -152,9 +152,12 @@\n i %3C \n-8\n+figB\n ; i+\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_13-28-05",
+            "content": "@@ -64,16 +64,42 @@\n igB int%0A\n+%09fig := make(%5B%5Dint, figB)%0A\n %09fmt.Sca\n@@ -133,32 +133,8 @@\n     \n-fig := make(%5B%5Dint, figB)\n %0A%0A%09f\n@@ -148,20 +148,17 @@\n  0; i %3C \n-figB\n+8\n ; i++ %7B%0A\n@@ -183,30 +183,8 @@\n )%0A%09%09\n-fmt.Print(fig%5Bi%5D, %22 %22)\n %0A%09%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_13-28-57",
+            "content": "@@ -21,18 +21,16 @@\n  %22fmt%22%0A%0A\n-%0A%0A\n func mai\n@@ -183,176 +183,34 @@\n %5D)%0A%09\n-%7D%0A%0A    for i:=0; i %3C figB; i++%7B%0A%0A        for j := 1; j %3C figB; j++%7B%0A            if fig%5Bi%5D == fig%5Bj%5D%7B%0A                fmt.Print(fig%5Bi%5D, %22 %22)%0A            %7D%0A        %7D%0A    %7D\n+%09fmt.Print(fig%5Bi%5D, %22 %22)%0A%09%7D%0A\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_13-33-02",
+            "content": "@@ -333,16 +333,17 @@\n         \n+%7D\n %0A       \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_13-37-28",
+            "content": "@@ -187,26 +187,9 @@\n %0A%09%7D%0A\n-    repetido := 0\n %0A\n+\n     \n@@ -225,115 +225,8 @@\n     \n- if fig%5Bi%5D == fig%5Bi+1%5D%7B%0A            repetido = fig%5Bi%5D%0A        %7D %0A        fmt.Print(repetido, %22 %22)%0A       /*\n  for\n@@ -333,17 +333,16 @@\n         \n-%7D\n %0A       \n@@ -347,11 +347,8 @@\n    %7D\n- */\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_13-41-06",
+            "content": "@@ -218,17 +218,16 @@\n :=0; i %3C\n-=\n  figB; i\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-41-25",
+            "content": "@@ -291,18 +291,16 @@\n  = fig%5Bi\n-+1\n %5D%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-41-52",
+            "content": "@@ -214,24 +214,25 @@\n or i:=0; i %3C\n+=\n  figB; i++%7B%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-42-04",
+            "content": "@@ -1,493 +1,39 @@\n-package main%0A%0Aimport %22fmt%22%0A%0A%0A%0Afunc main() %7B%0A%09var album int%0A%09var figB int%0A%09fmt.Scan(&album)%0A%09fmt.Scan(&figB)%0A    fig := make(%5B%5Dint, figB)%0A%0A%09for i := 0; i %3C figB; i++ %7B%0A%09%09fmt.Scan(&fig%5Bi%5D)%0A%09%7D%0A    repetido := 0%0A    for i:=0; i %3C figB - 1; i++%7B%0A%0A        if fig%5Bi%5D == fig%5Bi+1%5D%7B%0A            repetido = fig%5Bi+1%5D%0A        %7D %0A        fmt.Print(repetido, %22 %22)%0A       /* for j := 1; j %3C figB; j++%7B%0A            if fig%5Bi%5D == fig%5Bj%5D%7B%0A                fmt.Print(fig%5Bi%5D, %22 %22)%0A            %7D%0A        %7D */%0A    %7D%0A%7D\n+@@ -227,12 +227,8 @@%0A figB%0A- - 1%0A ; i+\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-04-14_13-42-24",
+            "content": "@@ -191,10 +191,8 @@\n     \n-//\n repe\n@@ -282,18 +282,27 @@\n     \n-fig%5Bi%5D = 0\n+repetido = fig%5Bi+1%5D\n %0A   \n@@ -319,38 +319,40 @@\n       fmt.Print(\n-fig%5Bi%5D\n+repetido\n , %22 %22)%0A       /*\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-44-24",
+            "content": "@@ -259,9 +259,9 @@\n %5Bi%5D \n-!\n+=\n = fi\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-44-47",
+            "content": "@@ -183,24 +183,26 @@\n %5Bi%5D)%0A%09%7D%0A    \n+//\n repetido := \n@@ -300,16 +300,17 @@\n        %7D\n+ \n %0A       \n@@ -314,23 +314,66 @@\n     \n-if fig%5Bi%5D != 0 \n+fmt.Print(fig%5Bi%5D, %22 %22)%0A       /* for j := 1; j %3C figB; j++\n %7B%0A  \n@@ -386,25 +386,28 @@\n     \n-repetido\n+if fig%5Bi%5D\n  =\n+=\n  fig%5B\n-i%5D\n+j%5D%7B\n %0A   \n@@ -403,35 +403,32 @@\n fig%5Bj%5D%7B%0A        \n-%7D %0A\n         fmt.Prin\n@@ -429,24 +429,22 @@\n t.Print(\n-repetido\n+fig%5Bi%5D\n , %22 %22)%0A \n@@ -448,16 +448,36 @@\n )%0A      \n+      %7D%0A        %7D */\n %0A    %7D%0A%7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-46-30",
+            "content": "@@ -191,10 +191,8 @@\n     \n-//\n repe\n@@ -285,24 +285,89 @@\n  fig%5Bi%5D = 0%0A\n+        %7D%0A        if fig%5Bi%5D != 0 %7B%0A            repetido = fig%5Bi%5D%0A\n         %7D %0A \n@@ -383,22 +383,24 @@\n t.Print(\n-fig%5Bi%5D\n+repetido\n , %22 %22)%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-14_13-47-28",
+            "content": "@@ -306,38 +306,8 @@\n  %7D %0A\n-%0A        if fig%5Bi%5D != 0 %7B%0A    \n     \n@@ -339,19 +339,16 @@\n )%0A      \n-  %7D\n %0A    %7D%0A%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_13-48-40",
+            "content": "@@ -183,24 +183,26 @@\n %5Bi%5D)%0A%09%7D%0A    \n+//\n repetido := \n@@ -375,63 +375,14 @@\n     \n-    repetido++%0A        %7D%0A    %7D%0A    fmt.Println(repetido)\n+%7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-14_13-50-09",
+            "content": "@@ -417,16 +417,11 @@\n rint\n-f(%22%5Cn%22, \n+ln(\n repe\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-51-03",
+            "content": "@@ -423,26 +423,10 @@\n %22%5Cn%22\n-)%0A    fmt.Println(\n+, \n repe\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_13-51-32",
+            "content": "@@ -230,9 +230,9 @@\n B - \n-2\n+1\n ; i+\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-14_13-52-52",
+            "content": "@@ -230,9 +230,9 @@\n B - \n-3\n+2\n ; i+\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-14_13-53-13",
+            "content": "@@ -219,24 +219,28 @@\n =0; i %3C figB\n+ - 3\n ; i++%7B%0A%0A    \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-14_13-53-25",
+            "content": "@@ -227,12 +227,8 @@\n figB\n- - 1\n ; i+\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-14_13-53-34",
+            "content": "@@ -425,66 +425,8 @@\n n%22)%0A\n-    if repetido == 0%7B%0A        fmt.Println(%22N%22)%0A    %7Delse%7B%0A\n     \n@@ -447,16 +447,10 @@\n petido)%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-14_13-54-48",
+            "content": "@@ -425,11 +425,96 @@\n n%22)%0A    \n+if repetido == 0%7B%0A        fmt.Println(%22N%22)%0A    %7Delse%7B%0A    fmt.Println(repetido)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-04-14_13-55-44",
+            "content": "package main\n\nimport \"fmt\"\n\n\n\nfunc main() {\n\tvar album int\n\tvar figB int\n\tfmt.Scan(&album)\n\tfmt.Scan(&figB)\n    fig := make([]int, figB)\n\n\tfor i := 0; i < figB; i++ {\n\t\tfmt.Scan(&fig[i])\n\t}\n    repetido := 0\n    for i:=0; i < figB - 1; i++{\n\n        if fig[i] != fig[i+1]{\n            fig[i] = 0\n        } \n\n        if fig[i] != 0 {\n            fmt.Print(fig[i], \" \")\n            repetido++\n        }\n    }\n    fmt.Printf(\"\\n\")\n    \n}\n",
+            "lines": "31"
+        }
+    ]
+}

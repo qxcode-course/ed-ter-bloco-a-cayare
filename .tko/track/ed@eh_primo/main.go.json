@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_11-49-27",
+            "content": "@@ -181,18 +181,16 @@\n t++%0A%09%7D%0A%09\n-//\n if cont \n@@ -196,18 +196,16 @@\n  %3C 3 %7B%0A%09\n-//\n %09return \n@@ -210,18 +210,16 @@\n n true%0A%09\n-//\n %7D%0A%0A%09retu\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-14_11-50-49",
+            "content": "@@ -138,53 +138,39 @@\n  %7B%0A%09\n-if x %3C 2 %7B%0A%09%09return false%0A%09%7D\n+var cont int = 0\n %0A%09if x\n- %25 \n+%25\n div == 0\n %7B%0A%09%09\n@@ -169,48 +169,43 @@\n == 0\n+ \n %7B%0A%09%09\n-return false\n+cont++\n %0A%09%7D%0A%09\n+//\n if \n-div * div %3E x\n+cont %3C 3 \n %7B%0A%09\n+//\n %09ret\n@@ -214,17 +214,20 @@\n n true%0A%09\n-%7D\n+//%7D%0A\n %0A%09return\n@@ -231,31 +231,13 @@\n urn \n-eh_primo(x , div + 1)%0A%09\n+false\n %0A%7D%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-14_12-01-17",
+            "content": "@@ -171,20 +171,20 @@\n %09if \n-div*div %3E x \n+x %25 div == 0\n %7B%0A%09%09\n@@ -190,19 +190,20 @@\n %09return \n-tru\n+fals\n e%0A%09%7D%0A%09if\n@@ -207,19 +207,21 @@\n %09if \n-x%25\n div \n-== 0 \n+* div %3E x\n %7B%0A%09%09\n@@ -223,28 +223,27 @@\n x%7B%0A%09%09return \n-fals\n+tru\n e%0A%09%7D%0A%09return\n@@ -257,17 +257,21 @@\n mo(x\n+ \n , div\n-+\n+ + \n 1)%0A\n+%09\n %0A%7D%0A%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-14_12-01-44",
+            "content": "package main\n\nimport \"fmt\"\n\n// x: n\u00famero que est\u00e1 sendo testado\n// div: divisor que est\u00e1 sendo testado\nfunc eh_primo(x int, div int) bool {\n\tif x < 2 {\n\t\treturn false\n\t}\n\tif div*div > x {\n\t\treturn true\n\t}\n\tif x%div == 0 {\n\t\treturn false\n\t}\n\treturn eh_primo(x, div+1)\n\n}\n\nfunc main() {\n\tvar x int\n\tfmt.Scan(&x)\n\tif eh_primo(x, 2) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n}\n",
+            "lines": "29"
+        }
+    ]
+}

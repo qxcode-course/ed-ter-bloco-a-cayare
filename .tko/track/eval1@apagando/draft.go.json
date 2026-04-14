@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_14-19-14",
+            "content": "@@ -580,24 +580,6 @@\n %0A%09%7D%0A\n-%09fmt.Printf(%22%5Cn%22)%0A\n %7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-14_14-19-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tpessoas := 0\n\tfmt.Scan(&pessoas)\n\tidentificador := make([]int, pessoas)\n\tfor i := 0; i < pessoas; i++ {\n\t\tfmt.Scan(&identificador[i])\n\t}\n\tdesistentes := 0\n\tfmt.Scan(&desistentes)\n\tVdesistentes := make([]int, desistentes)\n\tfor i := 0; i < desistentes; i++ {\n\t\tfmt.Scan(&Vdesistentes[i])\n\t}\n\tfor i := 0; i <pessoas; i++ {\n\t\tfor j := 0; j < desistentes; j++ {\n\t\t\tif identificador[i] == Vdesistentes[j] {\n\t\t\t\tidentificador[i] = 0\n\t\t\t}\n\t\t}\n\t}\n\tfor i := 0; i < pessoas; i++ {\n\t\tif identificador[i] != 0 {\n\t\t\tfmt.Print(identificador[i], \" \")\n\t\t}\n\t}\n\tfmt.Printf(\"\\n\")\n}\n",
+            "lines": "29"
+        }
+    ]
+}
