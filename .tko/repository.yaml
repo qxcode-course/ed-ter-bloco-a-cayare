@@ -18,10 +18,10 @@ expanded:
 - ed@vector
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'false'
+  panel: skills
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@vetbuild
-selected_index: 5
+selected: ed@dfs
+selected_index: 14

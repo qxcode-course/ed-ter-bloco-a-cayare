@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_03-11-43",
+            "content": "@@ -124,207 +124,27 @@\n  %7B%0A%09\n-low := 0%0A%09high := len(slice)%0A%0A%09for low %3C high %7B%0A%09%09mid := (low + high) / 2%0A%09%09if slice%5Bmid%5D == value %7B%0A%09%09%09return true, mid%0A%09%09%7D%0A%09%09if slice%5Bmid%5D %3C value %7B%0A%09%09%09low = mid + 1%0A%09%09%7D else %7B%0A%09%09%09high = mid%0A%09%09%7D%0A%09%7D\n+_, _ = slice, value\n %0A%09re\n@@ -159,11 +159,9 @@\n se, \n-low\n+0\n %0A%7D%0A%0A\n@@ -213,22 +213,17 @@\n .Stdin)%0A\n-%0A%09if !\n+%09\n scanner.\n@@ -232,113 +232,54 @@\n an()\n- %7B%0A%09%09return%0A%09%7D%0A%09line := scanner.Text()%0A%09line = strings.Trim(line\n+%0A%09parts := strings.Split(scanner.Text()\n , %22\n-%5B%5D\n  %22)%0A\n-%09parts := strings.Fields(line)%0A%0A\n %09sli\n@@ -300,17 +300,20 @@\n %09for _, \n-p\n+elem\n  := rang\n@@ -323,16 +323,34 @@\n arts\n+%5B1 : len(parts)-1%5D\n  %7B%0A%09%09val\n , _ \n@@ -345,16 +345,18 @@\n  %7B%0A%09%09val\n+ue\n , _ := s\n@@ -367,17 +367,20 @@\n nv.Atoi(\n-p\n+elem\n )%0A%09%09slic\n@@ -404,19 +404,16 @@\n  val\n+ue\n )%0A%09%7D%0A\n-%0A%09if !\n+%09\n scan\n@@ -426,31 +426,11 @@\n an()\n- %7B%0A%09%09return%0A%09%7D%0A%09searchV\n+%0A%09v\n alue\n@@ -453,26 +453,8 @@\n toi(\n-strings.TrimSpace(\n scan\n@@ -464,18 +464,16 @@\n .Text())\n-)%0A\n %0A%09found,\n@@ -507,22 +507,15 @@\n ce, \n-searchV\n+v\n alue)%0A\n-%0A\n %09if \n@@ -537,17 +537,13 @@\n rint\n-f\n+ln\n (%22V\n- %25d%5Cn\n %22, r\n@@ -574,17 +574,13 @@\n rint\n-f\n+ln\n (%22F\n- %25d%5Cn\n %22, r\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-28_03-21-45",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\tlow := 0\n\thigh := len(slice)\n\n\tfor low < high {\n\t\tmid := (low + high) / 2\n\t\tif slice[mid] == value {\n\t\t\treturn true, mid\n\t\t}\n\t\tif slice[mid] < value {\n\t\t\tlow = mid + 1\n\t\t} else {\n\t\t\thigh = mid\n\t\t}\n\t}\n\treturn false, low\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tline = strings.Trim(line, \"[] \")\n\tparts := strings.Fields(line)\n\n\tslice := []int{}\n\tfor _, p := range parts {\n\t\tval, _ := strconv.Atoi(p)\n\t\tslice = append(slice, val)\n\t}\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tsearchValue, _ := strconv.Atoi(strings.TrimSpace(scanner.Text()))\n\n\tfound, result := BetterSearch(slice, searchValue)\n\n\tif found {\n\t\tfmt.Printf(\"V %d\\n\", result)\n\t} else {\n\t\tfmt.Printf(\"F %d\\n\", result)\n\t}\n}\n",
+            "lines": "57"
+        }
+    ]
+}

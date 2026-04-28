@@ -1,0 +1,63 @@
+2026-04-28 01:13:36, MOVE, v:1, k:ed@setbuild, mode:DOWN
+2026-04-28 01:13:40, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-04-28 01:16:06, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:0, size:45
+2026-04-28 01:13:36, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 01:13:36, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 01:13:36, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 01:13:36, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 01:16:06, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 01:29:16, EXEC, v:1, k:ed@setbuild, mode:FULL, size:45, fail:COMP
+2026-04-28 01:29:05, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 01:29:24, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 02:09:23, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-04-28 02:13:22, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:0, size:45
+2026-04-28 02:13:22, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:0, size:45
+2026-04-28 02:13:23, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:0, size:45
+2026-04-28 02:13:23, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 02:16:19, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 02:25:07, EXEC, v:1, k:ed@setbuild, mode:FULL, size:45, fail:COMP
+2026-04-28 02:25:13, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 02:30:18, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:100, size:157
+2026-04-28 02:30:43, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-04-28 02:30:48, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-04-28 02:31:30, SELF, v:1, k:ed@setbuild, self:1, rate:100, study:90, concept:1, refactor:1
+2026-04-28 02:31:33, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-04-28 02:31:37, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-04-28 02:31:45, SELF, v:1, k:ed@setbuild, self:1, rate:100, study:90, guided:1, concept:1, refactor:1
+2026-04-28 02:31:47, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-04-28 02:32:05, MOVE, v:1, k:ed@bettersearch, mode:DOWN
+2026-04-28 02:32:08, MOVE, v:1, k:ed@bettersearch, mode:PICK
+2026-04-28 02:30:16, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 02:30:18, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 02:32:05, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-04-28 02:32:05, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-04-28 02:32:05, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-04-28 02:32:28, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 03:09:52, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18, size:33
+2026-04-28 03:09:52, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18, size:33
+2026-04-28 03:10:03, MOVE, v:1, k:ed@bettersearch, mode:BACK
+2026-04-28 03:10:33, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-04-28 03:10:51, SELF, v:1, k:ed@setbuild, self:1, study:90, guided:1, concept:1, refactor:1
+2026-04-28 03:10:53, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-04-28 03:10:55, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-04-28 03:11:10, SELF, v:1, k:ed@setbuild, self:1, study:90, guided:1, concept:1, refactor:1
+2026-04-28 03:11:11, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:100
+2026-04-28 03:11:13, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:100
+2026-04-28 03:11:13, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:100
+2026-04-28 03:11:21, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-04-28 03:11:38, MOVE, v:1, k:ed@bettersearch, mode:PICK
+2026-04-28 03:11:43, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18, size:33
+2026-04-28 03:13:49, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18
+2026-04-28 03:13:49, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18
+2026-04-28 03:13:50, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18
+2026-04-28 03:11:14, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-04-28 03:13:50, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-04-28 03:17:37, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18
+2026-04-28 03:17:37, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18
+2026-04-28 03:17:38, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18
+2026-04-28 03:17:38, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18
+2026-04-28 03:17:38, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-04-28 03:19:29, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-04-28 03:21:45, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:100, size:57
+2026-04-28 03:22:16, SELF, v:1, k:ed@bettersearch, self:1, rate:100, study:80, guided:1, concept:1, refactor:1
+2026-04-28 03:22:18, MOVE, v:1, k:ed@bettersearch, mode:BACK
