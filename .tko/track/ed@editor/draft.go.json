@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-06_13-18-56",
+            "content": "@@ -41,68 +41,34 @@\n     \n-var name string%0A    fmt.Scan(&name)%0A    fmt.Println(name,%22 %7C\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-06_13-20-32",
+            "content": "@@ -95,14 +95,15 @@\n n(name,%22\n+ \n %7C%22)%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-06_13-20-47",
+            "content": "@@ -41,34 +41,67 @@\n     \n-fmt.Println(%22Hello, World!\n+var name string%0A    fmt.Scan(&name)%0A    fmt.Println(name,%22%7C\n %22)%0A%7D\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-06_13-23-52",
+            "content": "@@ -10,1523 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Atype DNode struct %7B%0A%09Value rune%0A%09next  *DNode%0A%09prev  *DNode%0A%09root  *DNode%0A%7D%0A%0Atype DList struct %7B%0A%09root *DNode%0A%09size int%0A%7D%0A%0Afunc NewDList() *DList %7B%0A%09root := &DNode%7B%7D%0A%09root.next = root%0A%09root.prev = root%0A%09root.root = root%0A%09return &DList%7Broot: root, size: 0%7D%0A%7D%0A%0Afunc (l *DList) Insert(it *DNode, value rune) *DNode %7B%0A%09n := &DNode%7BValue: value, root: l.root%7D%0A%09n.prev = it.prev%0A%09n.next = it%0A%09it.prev.next = n%0A%09it.prev = n%0A%09l.size++%0A%09return n%0A%7D%0A%0Afunc (l *DList) Erase(it *DNode) *DNode %7B%0A%09if it == l.root %7C%7C it == nil %7B%0A%09%09return it%0A%09%7D%0A%09next := it.next%0A%09it.prev.next = it.next%0A%09it.next.prev = it.prev%0A%09l.size--%0A%09return next%0A%7D%0A%0Afunc (l *DList) ToString(cursor *DNode) string %7B%0A%09var res %5B%5Drune%0A%09for n := l.root.next; n != l.root; n = n.next %7B%0A%09%09if n == cursor %7B%0A%09%09%09res = append(res, '%7C')%0A%09%09%7D%0A%09%09res = append(res, n.Value)%0A%09%7D%0A%09if cursor == l.root %7B%0A%09%09res = append(res, '%7C')%0A%09%7D%0A%09return string(res)%0A%7D%0A%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09input := scanner.Text()%0A%0A%09l := NewDList()%0A%09cursor := l.root%0A%0A%09for _, char := range input %7B%0A%09%09switch char %7B%0A%09%09case 'R':%0A%09%09%09l.Insert(cursor, '%5Cn')%0A%09%09case 'B':%0A%09%09%09if cursor.prev != l.root %7B%0A%09%09%09%09l.Erase(cursor.prev)%0A%09%09%09%7D%0A%09%09case 'D':%0A%09%09%09if cursor != l.root %7B%0A%09%09%09%09cursor = l.Erase(cursor)%0A%09%09%09%7D%0A%09%09case '%3E':%0A%09%09%09if cursor != l.root %7B%0A%09%09%09%09cursor = cursor.next%0A%09%09%09%7D%0A%09%09case '%3C':%0A%09%09%09if cursor.prev != l.root %7B%0A%09%09%09%09cursor = cursor.prev%0A%09%09%09%7D%0A%09%09default:%0A%09%09%09l.Insert(cursor, char)%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(l.ToString(cursor)\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-11_12-13-47",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\ntype DNode struct {\n\tValue rune\n\tnext  *DNode\n\tprev  *DNode\n\troot  *DNode\n}\n\ntype DList struct {\n\troot *DNode\n\tsize int\n}\n\nfunc NewDList() *DList {\n\troot := &DNode{}\n\troot.next = root\n\troot.prev = root\n\troot.root = root\n\treturn &DList{root: root, size: 0}\n}\n\nfunc (l *DList) Insert(it *DNode, value rune) *DNode {\n\tn := &DNode{Value: value, root: l.root}\n\tn.prev = it.prev\n\tn.next = it\n\tit.prev.next = n\n\tit.prev = n\n\tl.size++\n\treturn n\n}\n\nfunc (l *DList) Erase(it *DNode) *DNode {\n\tif it == l.root || it == nil {\n\t\treturn it\n\t}\n\tnext := it.next\n\tit.prev.next = it.next\n\tit.next.prev = it.prev\n\tl.size--\n\treturn next\n}\n\nfunc (l *DList) ToString(cursor *DNode) string {\n\tvar res []rune\n\tfor n := l.root.next; n != l.root; n = n.next {\n\t\tif n == cursor {\n\t\t\tres = append(res, '|')\n\t\t}\n\t\tres = append(res, n.Value)\n\t}\n\tif cursor == l.root {\n\t\tres = append(res, '|')\n\t}\n\treturn string(res)\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tinput := scanner.Text()\n\n\tl := NewDList()\n\tcursor := l.root\n\n\tfor _, char := range input {\n\t\tswitch char {\n\t\tcase 'R':\n\t\t\tl.Insert(cursor, '\\n')\n\t\tcase 'B':\n\t\t\tif cursor.prev != l.root {\n\t\t\t\tl.Erase(cursor.prev)\n\t\t\t}\n\t\tcase 'D':\n\t\t\tif cursor != l.root {\n\t\t\t\tcursor = l.Erase(cursor)\n\t\t\t}\n\t\tcase '>':\n\t\t\tif cursor != l.root {\n\t\t\t\tcursor = cursor.next\n\t\t\t}\n\t\tcase '<':\n\t\t\tif cursor.prev != l.root {\n\t\t\t\tcursor = cursor.prev\n\t\t\t}\n\t\tdefault:\n\t\t\tl.Insert(cursor, char)\n\t\t}\n\t}\n\n\tfmt.Println(l.ToString(cursor))\n}\n",
+            "lines": "100"
+        }
+    ]
+}

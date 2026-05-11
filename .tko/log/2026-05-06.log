@@ -1,0 +1,11 @@
+2026-05-06 13:18:26, MOVE, v:1, k:ed@editor, mode:DOWN
+2026-05-06 13:18:30, MOVE, v:1, k:ed@editor, mode:PICK
+2026-05-06 13:18:56, EXEC, v:1, k:ed@editor, mode:FULL, rate:0, size:5
+2026-05-06 13:20:32, EXEC, v:1, k:ed@editor, mode:FULL, rate:0, size:7
+2026-05-06 13:20:47, EXEC, v:1, k:ed@editor, mode:FULL, rate:0, size:7
+2026-05-06 13:18:26, MOVE, v:1, k:ed@editor, mode:EDIT
+2026-05-06 13:18:26, MOVE, v:1, k:ed@editor, mode:EDIT
+2026-05-06 13:21:52, MOVE, v:1, k:ed@editor, mode:EDIT
+2026-05-06 13:20:47, MOVE, v:1, k:ed@editor, mode:EDIT
+2026-05-06 13:23:52, EXEC, v:1, k:ed@editor, mode:FULL, rate:0, size:5
+2026-05-06 13:23:52, MOVE, v:1, k:ed@editor, mode:EDIT
