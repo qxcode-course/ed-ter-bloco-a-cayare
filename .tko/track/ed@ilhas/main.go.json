@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-20_13-30-09",
+            "content": "@@ -44,652 +44,193 @@\n %22%0A)%0A\n-func dfs (grid %5B%5D%5B%5Dbyte, r int, c int)%7B%0A%09nr := len(grid)%0A%09nc := len(grid%5B0%5D)%0A%0A%09if r %3C 0 %7C%7C c %3C 0 %7C%7C r %3E= nr %7C%7C c %3E= nc %7C%7C grid%5Br%5D%5Bc%5D == '0'%7B%0A%09%09return%0A%09%7D%0A%09grid%5Br%5D%5Bc%5D = '0'%0A%09dfs(grid, r-1, c)%0A%09dfs(grid, r+1, c)%0A%09dfs(grid, r, c-1)%0A%09dfs(grid, r, c+1)%0A%7D%0A%0A// N%C3%A3o modifique a assinatura da fun%C3%A7%C3%A3o numIslands%0A// Ela %C3%A9 a fun%C3%A7%C3%A3o que ser%C3%A1 chamada no LeetCode para resolver o problema%0Afunc numIslands(grid %5B%5D%5B%5Dbyte) int %7B%0A%09if len(grid)== 0 %7B%0A%09%09return 0%0A%09%7D%0A%09nr := len(grid)%0A%09nc := len(grid%5B0%5D)%0A%09numIslands := 0%0A%0A%09for r := 0; r %3C nr; r++%7B%0A%09%09for c := 0; c %3C nc; c++%7B%0A%09%09%09if grid%5Br%5D%5Bc%5D == '1'%7B%0A%09%09%09%09numIslands++%0A%09%09%09%09dfs(grid, r, c)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09return numIslands\n+%0A// N%C3%A3o modifique a assinatura da fun%C3%A7%C3%A3o numIslands%0A// Ela %C3%A9 a fun%C3%A7%C3%A3o que ser%C3%A1 chamada no LeetCode para resolver o problema%0Afunc numIslands(grid %5B%5D%5B%5Dbyte) int %7B%0A%09//%0A%09_ := grid%0A%09return 0\n %0A%7D%0A%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-20_13-43-56",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc dfs (grid [][]byte, r int, c int){\n\tnr := len(grid)\n\tnc := len(grid[0])\n\n\tif r < 0 || c < 0 || r >= nr || c >= nc || grid[r][c] == '0'{\n\t\treturn\n\t}\n\tgrid[r][c] = '0'\n\tdfs(grid, r-1, c)\n\tdfs(grid, r+1, c)\n\tdfs(grid, r, c-1)\n\tdfs(grid, r, c+1)\n}\n\n// N\u00e3o modifique a assinatura da fun\u00e7\u00e3o numIslands\n// Ela \u00e9 a fun\u00e7\u00e3o que ser\u00e1 chamada no LeetCode para resolver o problema\nfunc numIslands(grid [][]byte) int {\n\tif len(grid)== 0 {\n\t\treturn 0\n\t}\n\tnr := len(grid)\n\tnc := len(grid[0])\n\tnumIslands := 0\n\n\tfor r := 0; r < nr; r++{\n\t\tfor c := 0; c < nc; c++{\n\t\t\tif grid[r][c] == '1'{\n\t\t\t\tnumIslands++\n\t\t\t\tdfs(grid, r, c)\n\t\t\t}\n\t\t}\n\t}\n\treturn numIslands\n}\n\n// N\u00e3o modifique a fun\u00e7\u00e3o main\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc int\n\tfmt.Sscanf(line, \"%d %d\", &nl, &nc)\n\tgrid := make([][]byte, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tscanner.Scan()\n\t\tgrid[i] = []byte(scanner.Text())\n\t}\n\tresult := numIslands(grid)\n\tfmt.Println(result)\n}\n",
+            "lines": "57"
+        }
+    ]
+}
