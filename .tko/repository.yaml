@@ -13,15 +13,18 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
 - ed@dfs
+- ed@backtrack
+- ed@basic
 - ed@list
+- ed@rec
+- ed@vector
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@pintura
-selected_index: 27
+selected: ed@subset_sum
+selected_index: 36
