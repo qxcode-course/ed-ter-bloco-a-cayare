@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-27_09-59-44",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,9 +37,12 @@\n ) %7B%0A\n-%09\n+    \n fmt.\n@@ -54,12 +54,21 @@\n ln(%22\n-abcd\n+Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-27_10-00-23",
+            "content": "@@ -50,13 +50,16 @@\n intln(%22a\n+bcd\n %22)%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-27_10-00-45",
+            "content": "@@ -18,739 +18,45 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22sort%22%0A%09%22strings%22%0A)%0A%0Afunc backtrack(chars %5B%5Drune, current %5B%5Drune, visited %5B%5Dbool) %7B%0A%09if len(current) == len(chars) %7B%0A%09%09fmt.Println(string(current))%0A%09%09return%0A%09%7D%0A%09for i := 0; i %3C len(chars); i++ %7B%0A%09%09if visited%5Bi%5D %7B%0A%09%09%09continue%0A%09%09%7D%0A%0A%09%09visited%5Bi%5D = true%0A%09%09current = append(current, chars%5Bi%5D)%0A%09%09backtrack(chars, current, visited)%0A%0A%09%09current = current%5B:len(current)-1%5D%0A%09%09visited%5Bi%5D = false%0A%09%7D%0A%7D%0A%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09s := strings.TrimSpace(scanner.Text())%0A%0A%09chars := %5B%5Drune(s)%0A%09sort.Slice(chars, func(i, j int) bool %7B%0A%09%09return chars%5Bi%5D %3C chars%5Bj%5D%0A%09%7D)%0A%0A%09visited := make(%5B%5Dbool, len(chars))%0A%09var current %5B%5Drune%0A%0A%09backtrack(chars, current, visited)%0A\n+%22fmt%22%0A%0Afunc main() %7B%0A%09fmt.Println(%22a%22)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-27_10-49-08",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n\t\"strings\"\n)\n\nfunc backtrack(chars []rune, current []rune, visited []bool) {\n\tif len(current) == len(chars) {\n\t\tfmt.Println(string(current))\n\t\treturn\n\t}\n\tfor i := 0; i < len(chars); i++ {\n\t\tif visited[i] {\n\t\t\tcontinue\n\t\t}\n\n\t\tvisited[i] = true\n\t\tcurrent = append(current, chars[i])\n\t\tbacktrack(chars, current, visited)\n\n\t\tcurrent = current[:len(current)-1]\n\t\tvisited[i] = false\n\t}\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\ts := strings.TrimSpace(scanner.Text())\n\n\tchars := []rune(s)\n\tsort.Slice(chars, func(i, j int) bool {\n\t\treturn chars[i] < chars[j]\n\t})\n\n\tvisited := make([]bool, len(chars))\n\tvar current []rune\n\n\tbacktrack(chars, current, visited)\n\n}\n",
+            "lines": "47"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+2026-05-27 09:58:10, MOVE, v:1, k:ed@permutacoes, mode:DOWN
+2026-05-27 09:58:12, MOVE, v:1, k:ed@permutacoes, mode:PICK
+2026-05-27 09:59:44, EXEC, v:1, k:ed@permutacoes, mode:FULL, rate:0, size:5
+2026-05-27 09:59:47, EXEC, v:1, k:ed@permutacoes, mode:FULL, rate:0
+2026-05-27 10:00:16, EXEC, v:1, k:ed@permutacoes, mode:FULL, rate:0
+2026-05-27 10:00:17, EXEC, v:1, k:ed@permutacoes, mode:FULL, rate:0
+2026-05-27 10:00:23, EXEC, v:1, k:ed@permutacoes, mode:FULL, rate:0, size:7
+2026-05-27 10:00:45, EXEC, v:1, k:ed@permutacoes, mode:FULL, rate:20, size:7
+2026-05-27 09:58:10, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 09:58:10, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 10:00:41, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 10:04:20, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 10:19:39, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 10:24:48, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 10:27:40, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 10:41:11, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-05-27 10:49:08, EXEC, v:1, k:ed@permutacoes, mode:FULL, rate:100, size:47
+2026-05-27 10:49:24, SELF, v:1, k:ed@permutacoes, self:1, rate:100, study:60, guided:1, concept:1, refactor:1
+2026-05-27 10:49:26, MOVE, v:1, k:ed@permutacoes, mode:BACK
+2026-05-27 10:51:45, MOVE, v:1, k:ed@ilhas, mode:PICK
+2026-05-27 10:51:51, MOVE, v:1, k:ed@ilhas, mode:BACK
+2026-05-27 10:52:12, MOVE, v:1, k:ed@longest, mode:DOWN
+2026-05-27 10:52:16, MOVE, v:1, k:ed@longest, mode:PICK
+2026-05-27 10:52:43, EXEC, v:1, k:ed@longest, mode:FULL, size:46, fail:COMP
+2026-05-27 10:52:43, EXEC, v:1, k:ed@longest, mode:FULL, size:46, fail:COMP
+2026-05-27 10:52:12, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 10:52:12, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 10:52:12, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 10:55:59, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 11:06:37, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 11:16:28, EXEC, v:1, k:ed@longest, mode:FULL, size:46, fail:COMP
+2026-05-27 11:16:29, MOVE, v:1, k:ed@longest, mode:BACK
