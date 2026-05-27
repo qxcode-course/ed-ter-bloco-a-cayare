@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_20-28-52",
+            "content": "@@ -10,446 +10,66 @@\n ain%0A\n-%0Afunc isValid(arr %5B%5Dbyte, index int, val byte, l int) bool %7B%0A%0A%7D%0Afunc backtrack(arr %5B%5Dbyte, index int, l int) bool %7B%0A%09if index == len(arr) %7B%0A%09%09return true%0A%09%7D%0A%09if arr%5Bindex%5D != '.' %7B%0A%09%09return backtrack(arr, index+1, l)%0A%09%7D%0A%09for d := 0; d %3C= l; d++ %7B%0A%09%09val := byte('0' + d)%0A%09%09if isValid(arr, index, val, l) %7B%0A%09%09%09arr%5Bindex%5D = val%0A%09%09%09if backtrack(arr, index+1, l) %7B%0A%09%09%09%09return true%0A%09%09%09%7D%0A%09%09%09arr%5Bindex%5D = '.'%0A%09%09%7D%0A%09%7D%0A%09return false%0A%7D%0A%0Afunc main() %7B%0A\n+import %22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_20-58-14",
+            "content": "@@ -11,64 +11,8 @@\n in%0A%0A\n-import (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strconv%22%0A%09%22strings%22%0A)%0A%0A\n func\n@@ -71,157 +71,9 @@\n l %7B%0A\n-%09for i := index - l; i %3C= index+l; i++ %7B%0A%09%09if i %3E= 0 && i %3C len(arr) && i != index %7B%0A%09%09%09if arr%5Bi%5D == val %7B%0A%09%09%09%09return false%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09return true\n %0A\n+\n %7D%0Afu\n@@ -449,304 +449,7 @@\n ) %7B%0A\n-%09scanner := bufio.NewScanner(os.Stdin)%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09seq := strings.TrimSpace(scanner.Text())%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09lStr := strings.TrimSpace(scanner.Text())%0A%09l, _ := strconv.Atoi(lStr)%0A%0A%09arr := %5B%5Dbyte(seq)%0A%09if backtrack(arr, 0, l) %7B%0A%09%09fmt.Println(string(arr))%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-26_21-05-57",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc isValid(arr []byte, index int, val byte, l int) bool {\n\tfor i := index - l; i <= index+l; i++ {\n\t\tif i >= 0 && i < len(arr) && i != index {\n\t\t\tif arr[i] == val {\n\t\t\t\treturn false\n\t\t\t}\n\t\t}\n\t}\n\treturn true\n}\nfunc backtrack(arr []byte, index int, l int) bool {\n\tif index == len(arr) {\n\t\treturn true\n\t}\n\tif arr[index] != '.' {\n\t\treturn backtrack(arr, index+1, l)\n\t}\n\tfor d := 0; d <= l; d++ {\n\t\tval := byte('0' + d)\n\t\tif isValid(arr, index, val, l) {\n\t\t\tarr[index] = val\n\t\t\tif backtrack(arr, index+1, l) {\n\t\t\t\treturn true\n\t\t\t}\n\t\t\tarr[index] = '.'\n\t\t}\n\t}\n\treturn false\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tseq := strings.TrimSpace(scanner.Text())\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tlStr := strings.TrimSpace(scanner.Text())\n\tl, _ := strconv.Atoi(lStr)\n\n\tarr := []byte(seq)\n\tif backtrack(arr, 0, l) {\n\t\tfmt.Println(string(arr))\n\t}\n}\n",
+            "lines": "57"
+        }
+    ]
+}

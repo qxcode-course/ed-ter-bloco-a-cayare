@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-26_15-05-04",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -10,778 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strconv%22%0A%09%22strings%22%0A)%0A%0Afunc backtrack(arr %5B%5Dint, target int, index int) bool %7B%0A%09if target == 0 %7B%0A%09%09return true%0A%09%7D%0A%09if target %3C 0 %7C%7C index %3E= len(arr) %7B%0A%09%09return false%0A%09%7D%0A%09return backtrack(arr, target-arr%5Bindex%5D, index+1) %7C%7C%0A%09%09backtrack(arr, target, index+1)%0A%7D%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09parts := strings.Fields(scanner.Text())%0A%09if len(parts) %3C 2 %7B%0A%09%09return%0A%09%7D%0A%09n, _ := strconv.Atoi(parts%5B0%5D)%0A%09k, _ := strconv.Atoi(parts%5B1%5D)%0A%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09numStr := strings.Fields(scanner.Text())%0A%09arr := make(%5B%5Dint, n)%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09arr%5Bi%5D, _ = strconv.Atoi(numStr%5Bi%5D)%0A%09%7D%0A%0A%09if backtrack(arr, k, 0) %7B%0A%09%09fmt.Println(%22true%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22false%22)%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-26_20-26-56",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc backtrack(arr []int, target int, index int) bool {\n\tif target == 0 {\n\t\treturn true\n\t}\n\tif target < 0 || index >= len(arr) {\n\t\treturn false\n\t}\n\treturn backtrack(arr, target-arr[index], index+1) ||\n\t\tbacktrack(arr, target, index+1)\n}\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tparts := strings.Fields(scanner.Text())\n\tif len(parts) < 2 {\n\t\treturn\n\t}\n\tn, _ := strconv.Atoi(parts[0])\n\tk, _ := strconv.Atoi(parts[1])\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tnumStr := strings.Fields(scanner.Text())\n\tarr := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tarr[i], _ = strconv.Atoi(numStr[i])\n\t}\n\n\tif backtrack(arr, k, 0) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n}\n",
+            "lines": "47"
         }
     ]
 }
