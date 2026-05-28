@@ -30,3 +30,46 @@
 2026-05-27 11:06:37, MOVE, v:1, k:ed@longest, mode:EDIT
 2026-05-27 11:16:28, EXEC, v:1, k:ed@longest, mode:FULL, size:46, fail:COMP
 2026-05-27 11:16:29, MOVE, v:1, k:ed@longest, mode:BACK
+2026-05-27 22:04:45, MOVE, v:1, k:ed@longest, mode:PICK
+2026-05-27 22:07:46, EXEC, v:1, k:ed@longest, mode:FULL, fail:COMP
+2026-05-27 22:19:23, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 22:20:23, EXEC, v:1, k:ed@longest, mode:FULL, size:64, fail:COMP
+2026-05-27 22:20:23, EXEC, v:1, k:ed@longest, mode:FULL, size:64, fail:COMP
+2026-05-27 22:20:24, EXEC, v:1, k:ed@longest, mode:FULL, size:64, fail:COMP
+2026-05-27 22:20:24, EXEC, v:1, k:ed@longest, mode:FULL, fail:COMP
+2026-05-27 22:20:24, EXEC, v:1, k:ed@longest, mode:FULL, fail:COMP
+2026-05-27 22:20:19, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 22:38:07, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:38:07, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:38:08, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:37:58, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-05-27 22:43:02, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:43:02, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:43:03, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:43:03, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:43:03, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:43:54, EXEC, v:1, k:ed@longest, mode:FULL, size:90, fail:COMP
+2026-05-27 22:43:55, EXEC, v:1, k:ed@longest, mode:FULL, fail:COMP
+2026-05-27 22:43:55, EXEC, v:1, k:ed@longest, mode:FULL, fail:COMP
+2026-05-27 22:43:55, EXEC, v:1, k:ed@longest, mode:FULL, fail:COMP
+2026-05-27 22:44:14, MOVE, v:1, k:ed@longest, mode:PICK
+2026-05-27 22:44:16, EXEC, v:1, k:ed@longest, mode:FULL, fail:COMP
+2026-05-27 22:52:45, EXEC, v:1, k:ed@longest, mode:FULL, rate:100, size:92
+2026-05-27 22:53:05, SELF, v:1, k:ed@longest, self:1, rate:100, study:90, guided:1, concept:1, refactor:1
+2026-05-27 22:53:07, MOVE, v:1, k:ed@longest, mode:BACK
+2026-05-27 22:53:23, MOVE, v:1, k:ed@dfs_read, mode:DOWN
+2026-05-27 22:53:26, MOVE, v:1, k:ed@dfs_read, mode:PICK
+2026-05-27 22:54:03, MOVE, v:1, k:ed@dfs_read, mode:BACK
+2026-05-27 22:54:47, MOVE, v:1, k:ed@battleship, mode:DOWN
+2026-05-27 22:54:48, MOVE, v:1, k:ed@battleship, mode:PICK
+2026-05-27 22:54:47, MOVE, v:1, k:ed@battleship, mode:EDIT
+2026-05-27 22:54:47, MOVE, v:1, k:ed@battleship, mode:EDIT
+2026-05-27 22:54:47, MOVE, v:1, k:ed@battleship, mode:EDIT
+2026-05-27 23:11:17, EXEC, v:1, k:ed@battleship, mode:FULL, size:32, fail:COMP
+2026-05-27 23:16:02, EXEC, v:1, k:ed@battleship, mode:FULL, fail:COMP
+2026-05-27 23:28:22, EXEC, v:1, k:ed@battleship, mode:FULL, rate:100, size:53
+2026-05-27 23:28:35, EXEC, v:1, k:ed@battleship, mode:FULL, rate:100
+2026-05-27 23:28:36, EXEC, v:1, k:ed@battleship, mode:FULL, rate:100
+2026-05-27 23:28:36, EXEC, v:1, k:ed@battleship, mode:FULL, rate:100
+2026-05-27 23:28:46, SELF, v:1, k:ed@battleship, self:1, rate:100, study:40, guided:1, concept:1, refactor:1
+2026-05-27 23:28:47, MOVE, v:1, k:ed@battleship, mode:BACK
