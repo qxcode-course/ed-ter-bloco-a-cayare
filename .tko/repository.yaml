@@ -13,14 +13,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
-- ed@dfs
-- ed@map_set
-- ed@basic
-- ed@rec
-- ed@list
-- ed@backtrack
-- ed@bfs
+- ed@linear
 flags:
   inbox: all
   panel: skills
@@ -28,5 +21,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@escapeSpread
-selected_index: 79
+selected: ed@bufferring
+selected_index: 7

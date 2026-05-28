@@ -23,9 +23,9 @@ func countBattleships(board [][]byte) int {
 			if linha > 0 && board[linha-1][coluna] == 'X' {
 				continue
 			}
-			//if coluna > 0 && board[linha][coluna-1] == 'X' {
-			//	continue
-			//}
+			if coluna > 0 && board[linha][coluna-1] == 'X' {
+				continue
+			}
 			totalNavios++
 		}
 	}
