@@ -1,0 +1,13 @@
+2026-05-30 00:06:01, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:16, size:155
+2026-05-30 00:05:55, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-05-30 00:09:20, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:50, size:164
+2026-05-30 00:09:16, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-05-30 00:15:22, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:83, size:183
+2026-05-30 00:15:23, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:83
+2026-05-30 00:15:23, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:83
+2026-05-30 00:15:48, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:83, size:183
+2026-05-30 00:16:02, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-05-30 00:16:06, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:100, size:183
+2026-05-30 00:16:24, SELF, v:1, k:ed@bufferring, self:1, rate:100, study:100, guided:1, concept:1, refactor:1
+2026-05-30 00:16:25, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:100
+2026-05-30 00:16:27, MOVE, v:1, k:ed@bufferring, mode:BACK

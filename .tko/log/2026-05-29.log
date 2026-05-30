@@ -1,0 +1,18 @@
+2026-05-29 17:30:40, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-05-29 17:33:37, MOVE, v:1, k:ed@bufferring, mode:BACK
+2026-05-29 17:33:42, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-05-29 17:34:00, MOVE, v:1, k:ed@bufferring, mode:BACK
+2026-05-29 17:40:02, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-05-29 17:40:04, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-05-29 17:42:01, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-05-29 17:42:04, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0
+2026-05-29 17:50:49, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0
+2026-05-29 17:50:45, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-05-29 17:58:28, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0, size:135
+2026-05-29 17:58:30, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0
+2026-05-29 17:59:51, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0, size:135
+2026-05-29 17:59:48, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-05-29 18:06:46, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0
+2026-05-29 18:06:47, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0
+2026-05-29 18:06:51, MOVE, v:1, k:ed@bufferring, mode:BACK
+2026-05-29 23:51:14, MOVE, v:1, k:ed@bufferring, mode:PICK
