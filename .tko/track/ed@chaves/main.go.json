@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-02_08-18-31",
+            "content": "@@ -18,149 +18,25 @@\n ort \n-%22fmt%22%0A%0Afunc main() %7B%0A%0A%09fila := NewQueue%5Bstring%5D()%0A%0A%09for c := 'A'; c %3C= 'P'; c++ %7B%0A%0A%09%09fila.Enqueue(string(c))%0A%0A%09%7D%0A%0A%09fmt.Println(fila.Str\n+(%0A)%0A%0Afunc ma\n in\n-g\n ()\n-)%0A\n+ %7B\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-06-02_08-32-55",
+            "content": "@@ -134,271 +134,32 @@\n %0A%0A%09f\n-or fila.items.Len() %3E 1 %7B%0A%09%09time1 := fila.Dequeue()%0A%09%09time2 := fila.Dequeue()%0A%0A%09%09var gols1, gols2 int%0A%09%09fmt.Scan(&gols1, &gols2)%0A%0A%09%09if gols1 %3E gols2 %7B%0A%09%09%09fila.Enqueue(time1)%0A%09%09%7D else %7B%0A%09%09%09fila.Enqueue(time2)%0A%09%09%7D%0A%09%7D%0A%0A%09campeao := fila.Dequeue()%0A%09fmt.Println(campeao\n+mt.Println(fila.String()\n )%0A%0A%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_08-42-15",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n\tfila := NewQueue[string]()\n\n\tfor c := 'A'; c <= 'P'; c++ {\n\n\t\tfila.Enqueue(string(c))\n\n\t}\n\n\tfor fila.items.Len() > 1 {\n\t\ttime1 := fila.Dequeue()\n\t\ttime2 := fila.Dequeue()\n\n\t\tvar gols1, gols2 int\n\t\tfmt.Scan(&gols1, &gols2)\n\n\t\tif gols1 > gols2 {\n\t\t\tfila.Enqueue(time1)\n\t\t} else {\n\t\t\tfila.Enqueue(time2)\n\t\t}\n\t}\n\n\tcampeao := fila.Dequeue()\n\tfmt.Println(campeao)\n\n}\n",
+            "lines": "32"
+        }
+    ]
+}

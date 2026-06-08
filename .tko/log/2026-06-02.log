@@ -1,0 +1,36 @@
+2026-06-02 08:16:08, MOVE, v:1, k:ed@chaves, mode:DOWN
+2026-06-02 08:16:10, MOVE, v:1, k:ed@chaves, mode:PICK
+2026-06-02 08:18:31, EXEC, v:1, k:ed@chaves, mode:FULL, rate:0, size:47
+2026-06-02 08:16:08, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-06-02 08:16:08, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-06-02 08:16:08, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-06-02 08:16:08, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-06-02 08:32:55, EXEC, v:1, k:ed@chaves, mode:FULL, rate:0, size:57
+2026-06-02 08:33:00, EXEC, v:1, k:ed@chaves, mode:FULL, rate:0
+2026-06-02 08:33:01, EXEC, v:1, k:ed@chaves, mode:FULL, rate:0
+2026-06-02 08:33:03, EXEC, v:1, k:ed@chaves, mode:FULL, rate:0
+2026-06-02 08:33:03, EXEC, v:1, k:ed@chaves, mode:FULL, rate:0
+2026-06-02 08:32:22, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-06-02 08:42:15, EXEC, v:1, k:ed@chaves, mode:FULL, rate:100, size:72
+2026-06-02 08:42:46, SELF, v:1, k:ed@chaves, self:1, rate:100, study:40, guided:1, concept:1, refactor:1
+2026-06-02 08:42:48, EXEC, v:1, k:ed@chaves, mode:FULL, rate:100
+2026-06-02 08:42:53, MOVE, v:1, k:ed@chaves, mode:BACK
+2026-06-02 08:43:42, MOVE, v:1, k:ed@queimando, mode:DOWN
+2026-06-02 08:43:43, MOVE, v:1, k:ed@queimando, mode:PICK
+2026-06-02 08:43:42, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 08:43:42, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 08:43:42, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 08:43:42, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 09:11:01, EXEC, v:1, k:ed@queimando, mode:FULL, size:77, fail:COMP
+2026-06-02 09:11:02, EXEC, v:1, k:ed@queimando, mode:FULL, fail:COMP
+2026-06-02 10:25:02, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 10:45:15, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 10:51:12, EXEC, v:1, k:ed@queimando, mode:FULL, rate:0, size:79
+2026-06-02 10:51:04, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 10:57:03, EXEC, v:1, k:ed@queimando, mode:FULL, size:99, fail:COMP
+2026-06-02 10:59:04, EXEC, v:1, k:ed@queimando, mode:FULL, rate:0, size:96
+2026-06-02 10:58:58, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-02 11:01:25, EXEC, v:1, k:ed@queimando, mode:FULL, rate:100, size:98
+2026-06-02 11:01:37, SELF, v:1, k:ed@queimando, self:1, rate:100, study:90, guided:1, concept:1, refactor:1
+2026-06-02 11:01:38, EXEC, v:1, k:ed@queimando, mode:FULL, rate:100
+2026-06-02 11:01:42, MOVE, v:1, k:ed@queimando, mode:BACK
