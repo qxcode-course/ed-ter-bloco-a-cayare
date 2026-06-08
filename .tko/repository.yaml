@@ -12,8 +12,7 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- ed@linear
+expanded: []
 flags:
   inbox: all
   panel: skills
@@ -21,5 +20,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@queimando
-selected_index: 11
+selected: ed@basic
+selected_index: 0
