@@ -12,8 +12,7 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- ed@tree
+expanded: []
 flags:
   inbox: all
   panel: skills
@@ -21,5 +20,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@altura
-selected_index: 13
+selected: ed@tree
+selected_index: 7
