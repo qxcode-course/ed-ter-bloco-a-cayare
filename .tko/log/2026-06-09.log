@@ -1,0 +1,11 @@
+2026-06-09 00:00:14, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-09 00:05:30, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:133
+2026-06-09 00:05:48, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:133
+2026-06-09 00:05:46, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-09 00:06:52, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-09 00:16:10, EXEC, v:1, k:ed@altura, mode:FULL, rate:100, size:133
+2026-06-09 00:16:24, SELF, v:1, k:ed@altura, self:1, rate:100, study:30, guided:1, concept:1, refactor:1
+2026-06-09 00:16:25, MOVE, v:1, k:ed@altura, mode:BACK
+2026-06-09 00:16:33, MOVE, v:1, k:ed@altura, mode:PICK
+2026-06-09 00:16:40, SELF, v:1, k:ed@altura, self:1, rate:100, study:35, guided:1, concept:1, refactor:1
+2026-06-09 00:16:41, MOVE, v:1, k:ed@altura, mode:BACK

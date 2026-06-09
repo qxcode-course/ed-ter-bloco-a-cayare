@@ -1,0 +1,47 @@
+2026-06-08 22:59:51, MOVE, v:1, k:ed@clonar, mode:DOWN
+2026-06-08 22:59:55, MOVE, v:1, k:ed@clonar, mode:PICK
+2026-06-08 23:02:12, EXEC, v:1, k:ed@clonar, mode:FULL, rate:0, size:76
+2026-06-08 22:59:51, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-08 22:59:51, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-08 22:59:51, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-08 23:06:04, EXEC, v:1, k:ed@clonar, mode:FULL, rate:16, size:81
+2026-06-08 23:07:41, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-08 23:15:47, EXEC, v:1, k:ed@clonar, mode:FULL, rate:100, size:81
+2026-06-08 23:17:13, SELF, v:1, k:ed@clonar, self:1, rate:100, study:20, guided:1, concept:1, refactor:1
+2026-06-08 23:17:38, MOVE, v:1, k:ed@clonar, mode:BACK
+2026-06-08 23:17:59, MOVE, v:1, k:ed@soma, mode:DOWN
+2026-06-08 23:18:19, MOVE, v:1, k:ed@soma, mode:PICK
+2026-06-08 23:17:59, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-08 23:17:59, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-08 23:22:09, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-08 23:26:59, EXEC, v:1, k:ed@soma, mode:FULL, size:99, fail:COMP
+2026-06-08 23:27:00, EXEC, v:1, k:ed@soma, mode:FULL, fail:COMP
+2026-06-08 23:27:00, EXEC, v:1, k:ed@soma, mode:FULL, fail:COMP
+2026-06-08 23:27:01, EXEC, v:1, k:ed@soma, mode:FULL, fail:COMP
+2026-06-08 23:27:01, EXEC, v:1, k:ed@soma, mode:FULL, fail:COMP
+2026-06-08 23:27:01, EXEC, v:1, k:ed@soma, mode:FULL, fail:COMP
+2026-06-08 23:27:17, EXEC, v:1, k:ed@soma, mode:FULL, size:100, fail:COMP
+2026-06-08 23:27:17, EXEC, v:1, k:ed@soma, mode:FULL, size:100, fail:COMP
+2026-06-08 23:27:17, EXEC, v:1, k:ed@soma, mode:FULL, size:100, fail:COMP
+2026-06-08 23:27:13, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-08 23:28:31, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:99
+2026-06-08 23:28:28, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-08 23:34:28, EXEC, v:1, k:ed@soma, mode:FULL, rate:71, size:99
+2026-06-08 23:34:29, EXEC, v:1, k:ed@soma, mode:FULL, rate:71
+2026-06-08 23:34:24, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-08 23:40:59, EXEC, v:1, k:ed@soma, mode:FULL, rate:71
+2026-06-08 23:41:13, EXEC, v:1, k:ed@soma, mode:FULL, rate:100, size:99
+2026-06-08 23:41:27, SELF, v:1, k:ed@soma, self:1, rate:100, study:25, guided:1, concept:1, refactor:1
+2026-06-08 23:41:28, MOVE, v:1, k:ed@soma, mode:BACK
+2026-06-08 23:41:48, MOVE, v:1, k:ed@altura, mode:DOWN
+2026-06-08 23:41:49, MOVE, v:1, k:ed@altura, mode:PICK
+2026-06-08 23:41:48, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-08 23:41:48, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-08 23:41:48, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-08 23:51:41, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:108
+2026-06-08 23:56:08, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-08 23:56:45, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:124
+2026-06-08 23:56:46, EXEC, v:1, k:ed@altura, mode:FULL, rate:0
+2026-06-08 23:59:57, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:133
+2026-06-08 23:59:59, EXEC, v:1, k:ed@altura, mode:FULL, rate:0
+2026-06-08 23:59:59, EXEC, v:1, k:ed@altura, mode:FULL, rate:0
