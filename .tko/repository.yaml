@@ -12,14 +12,13 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- ed@tree
+expanded: []
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@bst_serial
-selected_index: 17
+selected: ed@backtrack
+selected_index: 6

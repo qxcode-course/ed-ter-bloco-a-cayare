@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-10_12-27-14",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,404 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09if _, err := fmt.Scan(&n); err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09count := 0%0A%09done := (1 %3C%3C n) - 1%0A%0A%09var solve func(cols, diag1, diag2 int)%0A%09solve = func(cols, diag1, diag2 int) %7B%0A%09%09if cols == done %7B%0A%09%09%09count++%0A%09%09%09return%0A%09%09%7D%0A%0A%09%09available := done & %5E(cols %7C diag1 %7C diag2)%0A%0A%09%09for available %3E 0 %7B%0A%0A%09%09%09p := available & -available%0A%09%09%09available -= p%0A%0A%09%09%09solve(cols%7Cp, (diag1%7Cp)%3C%3C1, (diag2%7Cp)%3E%3E1)%0A%09%09%7D%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-10_12-50-19",
+            "content": "@@ -436,44 +436,7 @@\n %7D%0A%09%7D\n-%0A%0A%09solve(0, 0, 0)%0A%09fmt.Println(count)\n %0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-10_12-52-19",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tif _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n\n\tcount := 0\n\tdone := (1 << n) - 1\n\n\tvar solve func(cols, diag1, diag2 int)\n\tsolve = func(cols, diag1, diag2 int) {\n\t\tif cols == done {\n\t\t\tcount++\n\t\t\treturn\n\t\t}\n\n\t\tavailable := done & ^(cols | diag1 | diag2)\n\n\t\tfor available > 0 {\n\n\t\t\tp := available & -available\n\t\t\tavailable -= p\n\n\t\t\tsolve(cols|p, (diag1|p)<<1, (diag2|p)>>1)\n\t\t}\n\t}\n\n\tsolve(0, 0, 0)\n\tfmt.Println(count)\n}\n",
+            "lines": "34"
+        }
+    ]
+}
