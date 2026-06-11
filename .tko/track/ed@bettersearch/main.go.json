@@ -7,6 +7,21 @@
         },
         {
             "label": "2026-04-28_03-21-45",
+            "content": "@@ -286,17 +286,17 @@\n = mid + \n-2\n+1\n %0A%09%09%7D els\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-06-10_22-03-16",
+            "content": "@@ -290,9 +290,9 @@\n d + \n-3\n+2\n %0A%09%09%7D\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-06-10_22-13-22",
+            "content": "@@ -290,9 +290,9 @@\n d + \n-1\n+3\n %0A%09%09%7D\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-06-10_22-18-46",
             "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\tlow := 0\n\thigh := len(slice)\n\n\tfor low < high {\n\t\tmid := (low + high) / 2\n\t\tif slice[mid] == value {\n\t\t\treturn true, mid\n\t\t}\n\t\tif slice[mid] < value {\n\t\t\tlow = mid + 1\n\t\t} else {\n\t\t\thigh = mid\n\t\t}\n\t}\n\treturn false, low\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tline = strings.Trim(line, \"[] \")\n\tparts := strings.Fields(line)\n\n\tslice := []int{}\n\tfor _, p := range parts {\n\t\tval, _ := strconv.Atoi(p)\n\t\tslice = append(slice, val)\n\t}\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tsearchValue, _ := strconv.Atoi(strings.TrimSpace(scanner.Text()))\n\n\tfound, result := BetterSearch(slice, searchValue)\n\n\tif found {\n\t\tfmt.Printf(\"V %d\\n\", result)\n\t} else {\n\t\tfmt.Printf(\"F %d\\n\", result)\n\t}\n}\n",
             "lines": "57"
         }
