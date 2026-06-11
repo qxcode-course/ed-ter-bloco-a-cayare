@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-11_14-27-01",
+            "content": "@@ -115,110 +115,37 @@\n  %7B%0A%09\n-left := 0%0A%09right := len(slice) - 1%0A%0A%09for left %3C= right %7B%0A%09%09mid := left + (right-left)/2%0A%0A%09%09if slice%0A%09%7D\n+_, _ = slice, value%0A%09return 0\n %0A%7D%0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-11_14-51-55",
+            "content": "@@ -1,241 +1,68 @@\n-package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strconv%22%0A%09%22strings%22%0A)%0A%0Afunc MagicSearch(slice %5B%5Dint, value int) int %7B%0A%09left := 0%0A%09right := len(slice) - 1%0A%0A%09for left %3C= right %7B%0A%09%09mid := left + (right-left)/2%0A%0A%09%09if slice%5Bmid%5D == value %7B%0A%09%09%09\n+@@ -214,207 +214,11 @@%0A lice%0A-%255Bmid%255D == value %257B%250A%2509%2509%2509\n for \n@@ -67,17 +67,19 @@\n r mid+1 \n-%3C\n+%253C\n  len(sli\n@@ -94,15 +94,19 @@\n lice\n-%5B\n+%255B\n mid+1\n-%5D\n+%255D\n  == \n@@ -115,511 +115,251 @@\n lue \n-%7B%0A%09%09%09%09mid++%0A%09%09%09%7D%0A%09%09%09return mid%0A%09%09%7D else if slide%5Bmid%5D %3C value %7B%0A%09%09%09left = mid + 1%0A%09%09%7D else %7B%0A%09%09%09right = mid - 1%0A%09%09%7D%0A%09%7D%0A%09return left%0A%7D%0A%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09scanner.Scan()%0A%09parts := strings.Fields(scanner.Text())%0A%09slice := make(%5B%5Dint, 0, 1)%0A%09for _, elem := range parts%5B1 : len(parts)-1%5D %7B%0A%09%09value, _ := strconv.Atoi(elem)%0A%09%09slice = append(slice, value)%0A%09%7D%0A%0A%09scanner.Scan()%0A%09value, _ := strconv.Atoi(scanner.Text())%0A%09result := MagicSearch(slice, value)%0A%09fmt.Println(result)%0A%7D\n+%257B%250A%2509%2509%2509%2509mid++%250A%2509%2509%2509%257D%250A%2509%2509%2509return mid%250A%2509%2509%257D else if slide%255Bmid%255D %253C value %257B%250A%2509%2509%2509left = mid + 1%250A%2509%2509%257D else %257B%250A%2509%2509%2509right = mid - 1%250A%2509%2509%257D%250A%2509%257D%250A%2509return left%0A+%250A%2509%257D%0A %250A%257D%250A%250A\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-11_14-53-33",
+            "content": "@@ -320,25 +320,25 @@\n  else if sli\n-c\n+d\n e%5Bmid%5D %3C val\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-11_14-55-58",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc MagicSearch(slice []int, value int) int {\n\tleft := 0\n\tright := len(slice) - 1\n\n\tfor left <= right {\n\t\tmid := left + (right-left)/2\n\n\t\tif slice[mid] == value {\n\t\t\tfor mid+1 < len(slice) && slice[mid+1] == value {\n\t\t\t\tmid++\n\t\t\t}\n\t\t\treturn mid\n\t\t} else if slice[mid] < value {\n\t\t\tleft = mid + 1\n\t\t} else {\n\t\t\tright = mid - 1\n\t\t}\n\t}\n\treturn left\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Fields(scanner.Text())\n\tslice := make([]int, 0, 1)\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tresult := MagicSearch(slice, value)\n\tfmt.Println(result)\n}\n",
+            "lines": "46"
+        }
+    ]
+}

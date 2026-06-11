@@ -1,0 +1,30 @@
+2026-06-11 14:26:10, MOVE, v:1, k:ed@magicsearch, mode:DOWN
+2026-06-11 14:26:11, MOVE, v:1, k:ed@magicsearch, mode:PICK
+2026-06-11 14:27:01, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:30, size:30
+2026-06-11 14:27:02, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:30
+2026-06-11 14:27:03, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:30
+2026-06-11 14:26:10, MOVE, v:1, k:ed@magicsearch, mode:EDIT
+2026-06-11 14:26:10, MOVE, v:1, k:ed@magicsearch, mode:EDIT
+2026-06-11 14:26:10, MOVE, v:1, k:ed@magicsearch, mode:EDIT
+2026-06-11 14:32:26, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:30
+2026-06-11 14:32:27, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:30
+2026-06-11 14:32:27, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:30
+2026-06-11 14:34:16, MOVE, v:1, k:ed@magicsearch, mode:EDIT
+2026-06-11 14:49:18, MOVE, v:1, k:ed@magicsearch, mode:EDIT
+2026-06-11 14:51:55, EXEC, v:1, k:ed@magicsearch, mode:FULL, size:36, fail:COMP
+2026-06-11 14:53:33, EXEC, v:1, k:ed@magicsearch, mode:FULL, size:46, fail:COMP
+2026-06-11 14:53:33, EXEC, v:1, k:ed@magicsearch, mode:FULL, size:46, fail:COMP
+2026-06-11 14:53:33, EXEC, v:1, k:ed@magicsearch, mode:FULL, size:46, fail:COMP
+2026-06-11 14:53:34, EXEC, v:1, k:ed@magicsearch, mode:FULL, fail:COMP
+2026-06-11 14:53:34, EXEC, v:1, k:ed@magicsearch, mode:FULL, fail:COMP
+2026-06-11 14:53:34, EXEC, v:1, k:ed@magicsearch, mode:FULL, fail:COMP
+2026-06-11 14:53:26, MOVE, v:1, k:ed@magicsearch, mode:EDIT
+2026-06-11 14:55:58, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:100, size:46
+2026-06-11 14:56:00, MOVE, v:1, k:ed@magicsearch, mode:BACK
+2026-06-11 14:56:13, MOVE, v:1, k:ed@magicsearch, mode:PICK
+2026-06-11 14:56:42, SELF, v:1, k:ed@magicsearch, self:1, rate:100, study:30, guided:1, concept:1, debug:1, refactor:1
+2026-06-11 14:56:52, MOVE, v:1, k:ed@magicsearch, mode:BACK
+2026-06-11 15:03:03, MOVE, v:1, k:ed@vetbuild, mode:PICK
+2026-06-11 15:08:38, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:100, size:239
+2026-06-11 15:09:12, SELF, v:1, k:ed@vetbuild, self:1, rate:100, study:15, guided:1, concept:1, refactor:1
+2026-06-11 15:09:14, MOVE, v:1, k:ed@vetbuild, mode:BACK

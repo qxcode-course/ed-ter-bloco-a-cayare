@@ -55,12 +55,12 @@ func (v *Vector) PushBack(value int) {
 }
 
 func (v *Vector) PopBack() (int, error) {
-    if v.size == 0 {
-        return 0, fmt.Errorf("vector is empty")
-    }
-    value := v.data[v.size-1]
-    v.size--
-    return value, nil
+	if v.size == 0 {
+		return 0, fmt.Errorf("vector is empty")
+	}
+	value := v.data[v.size-1]
+	v.size--
+	return value, nil
 }
 
 func (v *Vector) At(index int) (int, error) {
@@ -179,12 +179,10 @@ func main() {
 				v.PushBack(value)
 			}
 		case "pop":
-		value, err := v.PopBack()
-		if err != nil {
-			fmt.Println(err)
-		} else {
-			fmt.Println(value)
-   			 }
+			_, err := v.PopBack()
+			if err != nil {
+				fmt.Println(err)
+			}
 		case "show":
 			fmt.Println(v.String())
 		case "status":
