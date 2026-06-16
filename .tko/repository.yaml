@@ -12,13 +12,18 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded: []
+expanded:
+- ed@linear
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'true'
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: false
+  interval_seconds: null
+audit_enabled: false
+audit_interval_seconds: null
 lang: go
-selected: ed@dfs
-selected_index: 8
+selected: ed@balanceada
+selected_index: 12
