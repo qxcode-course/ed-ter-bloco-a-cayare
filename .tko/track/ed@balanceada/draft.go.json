@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_23-21-11",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,9 +37,12 @@\n ) %7B%0A\n-%09\n+    \n fmt.\n@@ -54,20 +54,22 @@\n ln(%22\n-balanceado\n+Hello, World!\n %22)%0A\n-%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_23-21-32",
+            "content": "@@ -18,634 +18,55 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc isBalanced(s string) bool %7B%0A%09stack := %5B%5Drune%7B%7D%0A%0A%09for _, char := range s %7B%0A%09%09switch char %7B%0A%09%09case '(', '%5B':%0A%09%09%09stack = append(stack, char)%0A%0A%09%09case ')', '%5D':%0A%09%09%09if len(stack) == 0 %7B%0A%09%09%09%09return false%0A%09%09%09%7D%0A%09%09%09top := stack%5Blen(stack)-1%5D%0A%09%09%09stack = stack%5B:len(stack)-1%5D%0A%0A%09%09%09if (char == ')' && top != '(') %7C%7C (char == '%5D' && top != '%5B') %7B%0A%09%09%09%09return false%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09return len(stack) == 0%0A%7D%0A%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if scanner.Scan() %7B%0A%09%09input := scanner.Text()%0A%09%09if isBalanced(input) %7B%0A%09%09%09fmt.Println(%22balanceado%22)%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(%22nao balanceado %22)%0A%09%09%7D%0A%09%7D\n+%22fmt%22%0A%0Afunc main() %7B%0A%09fmt.Println(%22balanceado%22)\n %0A%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-16_21-51-52",
+            "content": "@@ -626,24 +626,25 @@\n o balanceado\n+ \n %22)%0A%09%09%7D%0A%09%7D%0A%0A%7D\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-16_21-52-37",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc isBalanced(s string) bool {\n\tstack := []rune{}\n\n\tfor _, char := range s {\n\t\tswitch char {\n\t\tcase '(', '[':\n\t\t\tstack = append(stack, char)\n\n\t\tcase ')', ']':\n\t\t\tif len(stack) == 0 {\n\t\t\t\treturn false\n\t\t\t}\n\t\t\ttop := stack[len(stack)-1]\n\t\t\tstack = stack[:len(stack)-1]\n\n\t\t\tif (char == ')' && top != '(') || (char == ']' && top != '[') {\n\t\t\t\treturn false\n\t\t\t}\n\t\t}\n\t}\n\n\treturn len(stack) == 0\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif scanner.Scan() {\n\t\tinput := scanner.Text()\n\t\tif isBalanced(input) {\n\t\t\tfmt.Println(\"balanceado\")\n\t\t} else {\n\t\t\tfmt.Println(\"nao balanceado\")\n\t\t}\n\t}\n\n}\n",
+            "lines": "44"
+        }
+    ]
+}

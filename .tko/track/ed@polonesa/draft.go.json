@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_21-53-57",
+            "content": "@@ -10,839 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc precedence(op string) int %7B%0A%09switch op %7B%0A%09case %22+%22, %22-%22:%0A%09%09return 1%0A%09case %22*%22, %22/%22:%0A%09%09return 2%0A%09case %22%5E%22:%0A%09%09return 3%0A%09%7D%0A%09return 0%0A%7D%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09input := scanner.Text()%0A%09tokens := strings.Fields(input)%0A%0A%09var output %5B%5Dstring%0A%09var stack %5B%5Dstring%0A%0A%09for _, token := range tokens %7B%0A%09%09if precedence(token) == 0 %7B%0A%09%09%09output = append(output, token)%0A%09%09%7D else %7B%0A%09%09%09for len(stack) %3E 0 && precedence(stack%5Blen(stack)-1%5D) %3E= precedence(token) %7B%0A%09%09%09%09output = append(output, stack%5Blen(stack)-1%5D)%0A%09%09%09%09stack = stack%5B:len(stack)-1%5D%0A%09%09%09%7D%0A%09%09%09stack = append(stack, token)%0A%0A%09%09%7D%0A%0A%09%09for len(stack) %3E 0 %7B%0A%09%09%09output = append(output, stack%5Blen(stack)-1%5D)%0A%09%09%09stack = stack%5B:len(stack)-1%5D%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(strings.Join(output, %22 %22)\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_22-18-13",
+            "content": "@@ -690,18 +690,16 @@\n %0A%0A%09%09%7D%0A%0A%09\n-%7D%0A\n %09for len\n@@ -714,16 +714,17 @@\n %3E 0 %7B%0A%09%09\n+%09\n output =\n@@ -762,16 +762,17 @@\n )-1%5D)%0A%09%09\n+%09\n stack = \n@@ -792,16 +792,20 @@\n ack)-1%5D%0A\n+%09%09%7D%0A\n %09%7D%0A%09fmt.\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-16_22-22-38",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc precedence(op string) int {\n\tswitch op {\n\tcase \"+\", \"-\":\n\t\treturn 1\n\tcase \"*\", \"/\":\n\t\treturn 2\n\tcase \"^\":\n\t\treturn 3\n\t}\n\treturn 0\n}\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tinput := scanner.Text()\n\ttokens := strings.Fields(input)\n\n\tvar output []string\n\tvar stack []string\n\n\tfor _, token := range tokens {\n\t\tif precedence(token) == 0 {\n\t\t\toutput = append(output, token)\n\t\t} else {\n\t\t\tfor len(stack) > 0 && precedence(stack[len(stack)-1]) >= precedence(token) {\n\t\t\t\toutput = append(output, stack[len(stack)-1])\n\t\t\t\tstack = stack[:len(stack)-1]\n\t\t\t}\n\t\t\tstack = append(stack, token)\n\n\t\t}\n\n\t}\n\tfor len(stack) > 0 {\n\t\toutput = append(output, stack[len(stack)-1])\n\t\tstack = stack[:len(stack)-1]\n\t}\n\tfmt.Println(strings.Join(output, \" \"))\n}\n",
+            "lines": "50"
+        }
+    ]
+}
